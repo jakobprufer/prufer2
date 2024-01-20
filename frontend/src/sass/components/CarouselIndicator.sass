@@ -1,0 +1,37 @@
+.carouselIndicator
+    height: 100vh
+    position: fixed
+    top: 0
+    left: 0
+    width: 5vw
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    gap: 16px
+    z-index: 4
+
+    @media (max-width: $breakMobile)
+        display: none
+
+    // &:hover
+    //     .dot
+    //         width: 12px
+    //         border-radius: 8px
+
+.dot
+    height: 16px
+    width: 8px
+    border-radius: 4px
+    // overflow: hidden
+    background: #7e7e7e42
+    transition: .2s
+    // mix-blend-mode: difference
+    // filter: invert(1)
+
+.dotFill
+    height: 100%
+    width: 100%
+    position: relative
+    border-radius: 4px
+    background: #7c7c7c

@@ -1,0 +1,67 @@
+.titleBarContainer
+    display: flex
+    justify-content: center
+
+.titleBarCollapseLayer
+    position: fixed
+    width: 100vw
+    height: 100vh
+    top: 0
+    left: 0
+    z-index: 9
+
+.titleBar
+    width: 350px
+    // height: 48px
+    position: fixed
+    top: 32px
+    z-index: 10
+    transition: max-height .2s ease-out
+    overflow: hidden
+    max-height: 46px
+
+    &.expanded
+        max-height: 1000px
+
+    @media (max-width: $breakMobile)
+        max-width: 100%
+        margin: 0 32px
+
+.titleBarTop
+    display: flex
+    justify-content: space-between
+    align-items: center
+    user-select: none
+
+.titleBarLeft
+    display: flex
+    gap: 8px
+    align-items: center
+
+.barLogoText
+    font-size: 12pt
+    transition: .2s
+
+.inside .barLogoText
+    @media (max-width: $breakMobile)
+        opacity: 0
+        user-select: none
+        pointer-events: none
+
+.titleBarExp
+    margin: 8px 0 8px 0
+
+    a
+        text-decoration: underline
+
+.barImage
+    // height: 150px
+    object-fit: cover
+    border-radius: 16px
+    width: 100%
+    height: 250px
+    // padding: 16px
+
+.barImages
+    display: flex
+    gap: 8px

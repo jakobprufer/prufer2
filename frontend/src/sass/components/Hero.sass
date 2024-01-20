@@ -1,0 +1,90 @@
+.hero
+    transition: opacity 1s, right .5s cubic-bezier(.43,-0.01,.35,1), width .5s cubic-bezier(.43,-0.01,.35,1), top .5s cubic-bezier(.43,-0.01,.35,1), left .5s cubic-bezier(.43,-0.01,.35,1)
+    position: absolute
+    aspect-ratio: 3/2
+    z-index: 1
+
+    &.video
+        aspect-ratio: 16/9
+
+.heroImage
+    position: absolute
+    width: 100%
+    top: 0
+    height: auto
+    z-index: 1
+
+.heroVideo
+    position: absolute
+    width: 100%
+    top: 0
+    height: auto
+    z-index: 1
+
+// you can't use a bottom value!    
+.glace
+    .hero
+        width: 60vw
+        height: auto
+        right: -8vw
+        transform: translateY(2vh)
+        top: 20vh
+
+        @media (max-width: $breakMobile)
+            width: 120vw
+            right: -40vw
+            top: 50vh
+
+        &.inside
+            width: 50vw
+            right: 25vw
+            top: 128px
+
+            @media (max-width: $breakMobile)
+                width: 86vw
+                right: 7vw
+                top: 96px
+
+.lostboy
+    .hero
+        width: 75vw
+        right: -20vw
+        top: 15vh
+        overflow: hidden
+
+        @media (min-aspect-ratio: 16/9) //for wider desktop screens (16/9 monitors)
+            top: 10vh
+
+        @media (max-width: $breakMobile)
+            width: 120vw
+            right: -40vw
+            top: 50vh
+
+        &.inside
+            right: 25vw
+            width: 50vw
+            top: 128px
+
+.cardioguard
+    .hero
+        width: 75vw
+        right: -20vw
+        top: 10vh
+
+        &.inside
+            right: 25vw
+            width: 50vw
+            top: 128px
+
+.birdsong
+    .hero
+        width: 100vw
+        top: 0vw
+        left: 0vw
+
+        &.inside
+            width: 60vw
+            top: 160px
+            left: 20vw
+            border-radius: 24px
+            overflow: hidden

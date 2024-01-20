@@ -1,0 +1,664 @@
+body
+    //background colours set in app/background.css because of server side layout component
+    color: $font
+
+    &.dark
+        background: $background-dark
+
+    &.light
+        background: $background-light
+
+.fadeIn
+    animation: fadeIn 0.4s ease-in-out
+    animation-fill-mode: both
+    animation-delay: 0.5s
+
+// .fadeOut
+//     animation: fadeOut 0.1s ease-in-out
+
+@keyframes fadeIn
+    0%
+        opacity: 0
+    100%
+        opacity: 1
+
+// @keyframes fadeOut
+//     from
+//         opacity: 1
+//     to
+//         opacity: 0
+
+.snapScrollCont
+    scroll-snap-type: y mandatory
+    height: 100vh
+    overflow: scroll
+    position: absolute
+    top: 0
+
+    &.inside
+        height: 100vh
+        overflow: hidden
+
+// .page
+//     transition: background .2s
+
+//     &.dark
+//         background: $background-dark
+
+//     &.light
+//         background: $background-light
+
+// FROM GLACE    
+// body
+//     background: $background
+//     color: $dark
+
+// .button
+//     cursor: pointer
+//     user-select: none
+
+// .page
+//     // max-width: $pageWidth
+//     width: 100%
+//     // margin: auto
+//     // min-height: 200vh
+//     // overflow: hidden
+
+// ::selection
+//     background: $theme
+
+// .riIconInline
+//     transform: translateY(15%) translateX(-15%)
+
+// .main
+//     width: 100%
+
+// .loading
+//     background: $light
+//     height: 60vh
+
+// .scrollDownCont
+//     position: fixed
+//     top: 0
+//     width: 100vw
+//     height: 100dvh
+//     display: flex
+//     justify-content: center
+//     align-items: flex-end
+//     z-index: 10
+
+// .scrollDown
+//     // font-weight: 500
+//     margin-bottom: 64px
+//     font-size: 12pt
+//     user-select: none
+//     cursor: pointer
+//     color: $lighthigh
+//     background: $dark
+//     backdrop-filter: blur(15px)
+//     padding: 8px 16px
+//     border-radius: 16px
+
+// .hideOverflow
+//     width: 100vw
+//     overflow: hidden
+
+// .firstSection
+//     background: $light
+//     height: 50vh
+//     position: relative
+//     padding: 1px
+//     overflow: hidden
+//     top: 0
+//     z-index: 3
+
+// .logoContainer
+//     background: $logoBackground
+//     height: 75px
+//     width: 75px
+//     padding: 8.2px
+//     border-radius: 22px
+//     margin: 40vh auto 0 auto
+
+//     @media (max-width: $breakBig)
+//         height: 64px
+//         width: 64px
+//         padding: 7px
+//         border-radius: 18.7px
+//         margin: 40vh auto 0 auto
+
+//     @media (max-width: $breakMobile)
+//         height: 48px
+//         width: 48px
+//         padding: 5.24px
+//         border-radius: 14.1px
+//         margin: 35vh auto 0 auto
+
+// .logo
+//     width: 58px
+//     height: 58px
+
+//     @media (max-width: $breakBig)
+//         width: 49.5px
+//         height: 49.5px
+
+//     @media (max-width: $breakMobile)
+//         width: 37.1px
+//         height: 37.1px
+
+// .loadedLogo
+//     animation: rotate 1s ease-out
+
+// @keyframes rotate
+//     from
+//         transform: rotate(0deg)
+
+//     to
+//         transform: rotate(90deg)
+
+// .loadingLogo
+//     animation: spin 2s linear infinite
+
+// @keyframes spin
+//     from
+//         transform: rotate(0deg)
+
+//     to
+//         transform: rotate(360deg)
+
+// .hometext
+//     position: absolute
+//     top: calc( 40vh - 125px )
+//     line-height: 80pt
+//     width: 100%
+//     text-align: center
+
+//     @media (max-width: $breakBig)
+//         line-height: 56pt
+//         top: calc( 40vh - 80px )
+
+//     @media (max-width: $breakMobile)
+//         line-height: 35.8pt
+//         top: calc( 35vh - 50px )
+
+// .aboveLogo
+//     overflow: hidden
+//     padding-right: 88px
+
+// .leftOfLogo
+//     // margin: auto
+//     width: 50%
+//     display: inline-block
+//     text-align: right
+//     padding-right: 75px
+//     overflow: hidden
+
+//     @media (max-width: $breakBig)
+//         padding-right: 64px
+
+//     @media (max-width: $breakMobile)
+//         padding-right: 40px
+
+// .rightOfLogo
+//     // margin: auto
+//     width: 50%
+//     display: inline-block
+//     text-align: left
+//     padding-left: 50px
+//     overflow: hidden
+
+//     @media (max-width: $breakBig)
+//         padding-left: 42.7px
+
+//     @media (max-width: $breakMobile)
+//         padding-left: 32px
+
+// .secondSection
+//     background: $light
+//     position: relative
+//     overflow: hidden
+//     height: 200vh
+//     display: flex
+//     align-items: center
+//     justify-content: flex-end
+//     width: 100%
+
+//     @media (max-width: $breakMobile)
+//         justify-content: center
+//         height: 200vh
+
+// .glacierShadowBox
+//     box-shadow: inset 0px 100px 22px -63px #dcdcdc,inset 0px -89px 44px -59px #000
+//     z-index: 2
+//     height: 100%
+//     width: 100%
+
+// .glacier
+//     width: 120vw
+//     height: 100%
+//     object-fit: cover
+//     display: block
+//     position: absolute
+//     left: 0
+//     z-index: 1
+//     transition: transform 1.2s cubic-bezier(0, .79, .65, .99)
+
+//     @media (max-width: $breakMobile)
+//         width: auto
+//         height: 100%
+
+// .secondSectionText
+//     position: absolute
+//     display: flex
+//     flex-direction: column
+//     gap: 32px
+//     padding-right: 10vw
+//     padding-top: 10vh
+//     color: $light
+//     z-index: 2
+
+//     @media (max-width: $breakMobile)
+//         padding-right: 8vw
+//         padding-left: 8vw
+
+//     p
+//         max-width: 550px
+
+// .thirdSection
+//     height: 100vh
+//     background: $darkhigh
+//     position: relative
+//     display: flex
+//     flex-wrap: nowrap
+//     flex-direction: row
+//     align-items: center
+//     margin-top: -50vh
+
+//     gap: 64px
+
+//     @media (max-width: $breakMobile)
+//         flex-direction: column
+//         margin-top: -20vh
+
+// .thirdSectionText
+//     display: flex
+//     flex-direction: column
+//     gap: 32px
+//     padding-left: 10vw
+//     color: $light
+//     z-index: 2
+
+//     @media (max-width: $breakMobile)
+//         padding-right: 8vw
+//         padding-left: 8vw
+
+//     p
+//         max-width: 550px
+
+// .phone
+//     max-width: 40vw
+//     max-height: 40vw
+//     object-fit: contain
+//     z-index: 2
+//     position: relative
+//     top: 15vh
+//     transition: transform 1.2s cubic-bezier(0, .79, .65, .99)
+
+//     @media (max-width: $breakMobile)
+//         top: 5vh
+//         max-width: 80vw
+//         max-height: 80vw
+
+// .fourthSection
+//     height: 100vh
+//     background: $darkhigh
+//     position: relative
+//     display: flex
+//     justify-content: flex-end
+//     flex-direction: row
+//     align-items: flex-start
+
+//     @media (max-width: $breakBig)
+//         align-items: flex-end
+//         height: 80vh
+
+//     @media (max-width: $breakMobile)
+//         flex-direction: column-reverse
+//         height: 130vw
+//         margin-top: -10vh
+
+// .pingpong
+//     max-width: 80vw
+//     max-height: 80vw
+//     position: absolute
+//     left: -20vh
+//     top: -5vw
+//     z-index: 3
+//     transition: transform 1.2s cubic-bezier(0, .79, .65, .99)
+
+//     @media (max-width: $breakMobile)
+//         max-width: 100vw
+//         max-height: 100vw
+//         left: 0
+//         top: 20vh
+
+// .fourthSectionText
+//     position: absolute
+//     display: flex
+//     flex-direction: column
+//     gap: 32px
+//     padding-right: 10vw
+//     padding-top: 8vw
+//     color: $light
+//     z-index: 4
+
+//     @media (max-width: $breakBig)
+//         padding-bottom: 10vw
+
+//     @media (max-width: $breakMobile)
+//         padding-right: 8vw
+//         padding-left: 8vw
+//         // padding-top: 10vw
+
+//     p
+//         max-width: 400px
+
+// .fifthSection
+//     height: 150vh
+//     overflow: hidden
+//     position: relative
+//     display: flex
+//     flex-wrap: nowrap
+//     flex-direction: row
+//     align-items: center
+//     justify-content: space-between
+//     gap: 32px
+//     z-index: 5
+
+//     @media (max-width: 1000px)
+//         gap: 16px
+
+//     @media (max-width: $breakBig)
+//         flex-direction: column
+//         justify-content: center
+//         align-items: flex-start
+//         gap: 128px
+
+//     @media (max-height: 800px)
+//         gap: 64px
+
+// .bearsShadowBox
+//     box-shadow: inset 0px -300px 400px -59px #000
+//     z-index: 2
+//     height: 100%
+//     width: 100%
+//     position: absolute
+
+// .bears
+//     width: 100vw
+//     height: 100%
+//     object-fit: cover
+//     object-position: center
+//     display: block
+//     position: absolute
+//     left: 0
+//     z-index: 1
+//     transition: transform 1.2s cubic-bezier(0, .79, .65, .99)
+
+//     @media (max-height: 800px)
+//         left: -200px
+//         top: -50px
+
+//     @media (max-width: $breakBig)
+//         width: auto
+//         height: 100%
+
+//     @media (max-width: $breakMobile)
+//         left: -10vw
+
+// .fifthSectionText
+//     padding-left: 10vw
+//     color: $light
+//     z-index: 2
+//     display: flex
+//     flex-direction: column
+//     gap: 16px
+
+//     @media (max-width: 1000px)
+//         padding-left: 5vw
+
+//     @media (max-width: $breakBig)
+//         padding-right: 8vw
+//         padding-left: 8vw
+
+//     p
+//         max-width: 450px
+
+// .expandingButtonOuter
+//     position: relative
+//     z-index: 8
+
+// .expandingButton
+//     background: $transparentButton
+//     backdrop-filter: blur(15px)
+//     font-size: 12pt
+//     color: $lighthigh
+//     width: fit-content
+//     position: absolute
+//     top: 0
+
+// .buttonLabel
+//     padding: 8px 16px
+
+// .buttonExp
+//     margin-top: 16px
+//     margin-bottom: 8px
+//     font-size: 10pt
+//     margin: 0px 16px 16px 16px
+//     position: relative
+
+//     h3
+//         margin-bottom: 4px
+//         margin-top: 16px
+
+//     a
+//         // font-size: 10pt
+//         text-decoration: underline
+
+// .bearFrames
+//     // position: static
+//     width: 700px
+//     height: 680px
+//     flex-shrink: 0
+//     z-index: 2
+
+//     @media (max-width: $breakBig)
+//         transform: translate(-20vw)
+//         align-self: center
+
+//     @media (max-width: $breakMobile)
+//         transform: translate(-50vw)
+
+// .frame
+//     // position: absolute
+//     width: 100%
+//     height: 100%
+//     z-index: 3
+//     padding-right: 5vw
+//     z-index: 2
+
+//     @media (max-width: 1000px)
+//         padding-right: 0
+
+// .sixthSection
+//     height: 200vh
+//     padding-bottom: 100vh
+//     width: 100%
+//     background: $darkhigh
+//     color: $light
+//     display: flex
+//     flex-direction: column
+//     justify-content: center
+//     align-items: center
+//     gap: 32px
+
+//     p
+//         max-width: 500px
+
+//     @media (max-width: $breakMobile)
+//         padding-right: 8vw
+//         padding-left: 8vw
+
+// .sixthSectionLighter
+//     height: 200vh
+//     margin-top: -200vh
+//     background: $background
+//     position: relative
+
+// .seventhSection
+//     // height: 300vh
+//     margin-top: -200vh
+//     padding-top: 100vh
+//     color: $dark
+//     display: flex
+//     gap: 5vw
+//     // background: $background
+//     position: relative
+
+//     @media (max-width: $breakMobile)
+//         flex-direction: column
+
+// .seventhLeft
+//     width: 50%
+//     display: flex
+//     justify-content: right
+//     align-items: center
+//     height: 100vh
+//     // overflow: hidden
+//     position: -webkit-sticky
+//     position: -moz-sticky
+//     position: -o-sticky
+//     position: -ms-sticky
+//     position: sticky
+//     top: 0
+//     align-self: flex-start
+
+//     @media (max-width: $breakMobile)
+//         width: 100%
+//         height: 55vh
+//         padding-top: 96px
+//         z-index: 5
+
+// @media (max-width: $breakMobile)
+//     .seventhLeft.withBg
+//         background: $background
+//         box-shadow: 0px 30px 39px 0px $background
+
+// .screens
+//     // margin-right: 16px
+//     z-index: 2
+//     display: flex
+//     align-items: center
+//     justify-content: center
+//     width: 100%
+//     // margin-left: 20vw
+
+// .screen1
+//     width: 25%
+//     height: auto
+//     transform: translateX(3vw)
+
+// .screen2
+//     width: 30%
+//     height: auto
+//     z-index: 3
+//     transition: .2s ease-in-out
+
+//     &.exp
+//         width: 35%
+
+//     &.exp2
+//         width: 40%
+
+// .screen3
+//     width: 25%
+//     height: auto
+//     transform: translateX(-3vw)
+
+// .screen4
+//     position: fixed
+//     width: 35%
+//     top: 20vh
+
+// .screen5
+//     position: fixed
+//     width: 40%
+//     top: 20vh
+
+// .screen
+//     // position: absolute
+//     width: 100%
+//     height: auto
+
+// .seventhRight
+//     width: 50%
+//     // padding-left: 16px
+//     z-index: 2
+
+//     @media (max-width: $breakMobile)
+//         width: 100%
+
+// .introducingCont
+//     height: 100vh
+//     display: flex
+//     justify-content: left
+//     align-items: center
+
+//     @media (max-width: $breakMobile)
+//         justify-content: center
+
+// .introducingGroup
+//     display: flex
+//     flex-direction: column
+//     gap: 8px
+//     align-content: flex-start
+//     // background: red
+
+// .introducingText
+//     margin-left: 8vw
+//     // background: $dark
+//     // padding-bottom: 16px
+//     // border-bottom: 2px solid $darkhigh
+
+//     @media (max-width: $breakMobile)
+//         margin-left: 0
+
+// .introLogo
+//     width: 25vw
+//     height: auto
+//     // background: $logoBackground
+//     // padding: 16px 32px
+//     // border-radius: 16px
+
+//     @media (max-width: $breakMobile)
+//         width: 60vw
+
+// .seventhSectionContent
+//     z-index: 2
+
+// .featureCont
+//     min-height: 80vh
+
+//     @media (max-width: $breakMobile)
+//         min-height: 40vh
+
+//     p
+//         max-width: 500px
+
+//         @media (max-width: $breakMobile)
+//             padding-right: 8vw
+//             padding-left: 8vw
+
+//     &.last
+//         min-height: 55vh
+//         // background: red

@@ -1,0 +1,465 @@
+{
+    "portfolio": [
+        {
+            "index": 0,
+            "colour": "dark",
+            "name": "Intro",
+            "href": "intro",
+            "title": [
+                {
+                    "type": "text",
+                    "text": "Hi I'm"
+                },
+                {
+                    "type": "headshot",
+                    "src": "/jakob3.jpg",
+                    "alt": "Jakob Prüfer smiling",
+                    "h": 1200,
+                    "w": 1200
+                },
+                {
+                    "type": "text",
+                    "text": "Jakob Prüfer,\nux designer and front-end developer."
+                },
+                {
+                    "type": "text2",
+                    "text": "This is my portfolio."
+                }
+            ],
+            "subtitles": [
+                [
+                    {
+                        "type": "text",
+                        "text": "I'm currently designer and co-founder at"
+                    },
+                    {
+                        "type": "icon",
+                        "src": "/lostboy-brighter.jpg",
+                        "alt": "Lost Boy Icon"
+                    },
+                    {
+                        "type": "text",
+                        "text": "Lost Boy."
+                    }
+                ],
+                [
+                    {
+                        "type": "text",
+                        "text": "I studied Psychology (BSc) at the"
+                    },
+                    {
+                        "type": "icon",
+                        "src": "/lse.jpg",
+                        "alt": "LSE Icon"
+                    },
+                    {
+                        "type": "text",
+                        "text": "London School of Economics and UX Design (MA) at the"
+                    },
+                    {
+                        "type": "icon",
+                        "src": "/ual.jpg",
+                        "alt": "UAL Icon"
+                    },
+                    {
+                        "type": "text",
+                        "text": "University of the Arts London."
+                    }
+                ],
+                [
+                    {
+                        "type": "text",
+                        "text": "I'm fluent in English, German, HTML, CSS, JavaScript,"
+                    },
+                    {
+                        "type": "icon",
+                        "src": "/react.svg",
+                        "alt": "React Icon"
+                    },
+                    {
+                        "type": "text",
+                        "text": "React and"
+                    },
+                    {
+                        "type": "icon",
+                        "src": "/next.svg",
+                        "alt": "Next Icon"
+                    },
+                    {
+                        "type": "text",
+                        "text": "Next.js."
+                    }
+                ]
+            ]
+        },
+        {
+            "index": 1,
+            "colour": "light",
+            "name": "Glace",
+            "href": "glace",
+            "title": [
+                {
+                    "type": "icon",
+                    "src": "/glace.svg",
+                    "alt": "Glace Icon",
+                    "h": 200,
+                    "w": 200
+                },
+                {
+                    "type": "text",
+                    "text": "Glace"
+                }
+            ],
+            "timeFrame": "August - November 2023",
+            "myRole": "Data Research, UX Design, Web Development",
+            "contributors": [
+                {
+                    "name": "Me",
+                    "role": "Data Research, UX Design, Web Development"
+                },
+                {
+                    "name": "Manfredi Montaretto Marullo",
+                    "role": "UI Design, 3D, Usability Testing"
+                }
+            ],
+            "tools": [
+                {
+                    "name": "Midjourney"
+                },
+                {
+                    "name": "Next.js"
+                },
+                {
+                    "name": "Figma"
+                },
+                {
+                    "name": "Adobe CC"
+                },
+                {
+                    "name": "Notion"
+                }
+            ],
+            "status": "App: Prototype, Website: Live",
+            "teaser": [
+                [
+                    {
+                        "type": "heading",
+                        "text": "About"
+                    },
+                    {
+                        "type": "text",
+                        "text": "We found that sustainable investing doesn't feel tangible at all for Generation Z. We designed a mobile application with an augmented reality Arctic ice sheet that dynamically represents the amount of ice saved through user's green investments."
+                    }
+                ]
+            ],
+            "teaserShort": [
+                [
+                    {
+                        "type": "heading",
+                        "text": "About"
+                    },
+                    {
+                        "type": "text",
+                        "text": "A mobile app showing users how much Arctic ice they help to preserve through their sustainable investments, using augmented reality"
+                    }
+                ]
+            ],
+            "detail": [
+                [
+                    {
+                        "type": "heading",
+                        "text": "Challenge"
+                    },
+                    {
+                        "type": "text",
+                        "text": "For the final project of the MA UX Design at the University of the Arts London, Manfredi and I aimed to motivate young people to invest for environmental impact. We found Gen Z is highly concerned about climate change and interested in investing through brokers and cryptocurrencies. Yet sustainable investing lacks tangibility."
+                    }
+                ],
+                [
+                    {
+                        "type": "heading",
+                        "text": "Solution"
+                    },
+                    {
+                        "type": "text",
+                        "text": "Our designed mobile application features an augmented reality Arctic ice sheet that dynamically represents the amount of ice saved through reduced CO2 emissions. It includes a preferences-based green fund portfolio and emphasises community impact context."
+                    }
+                ]
+            ],
+            "hero": {
+                "type": "image",
+                "src": "/glacebg.jpg",
+                "alt": "Screenshot of Glace App",
+                "h": 2404,
+                "w": 1575
+            },
+            "action": "See more",
+            "externalAction": [
+                {
+                    "href": "https://glace.earth/",
+                    "text": "Visit the website"
+                },
+                {
+                    "icon": "./notion.svg",
+                    "href": "https://glace.earth/",
+                    "text": "See documentation"
+                }
+        ],
+            "model": "/glaceModel.gltf"
+        },
+        {
+            "index": 2,
+            "colour": "dark",
+            "name": "lostboy.tv",
+            "href": "lostboy",
+            "title": [
+                {
+                    "type": "icon",
+                    "src": "/lostboy-brighter.jpg",
+                    "alt": "Lost Boy Icon",
+                    "h": 200,
+                    "w": 200
+                },
+                {
+                    "type": "text",
+                    "text": "lostboy.tv"
+                }
+            ],
+            "timeFrame": "Januar - September 2023",
+            "myRole": "Conception, Branding, Web Development",
+            "contributors": [
+                {
+                    "name": "Me",
+                    "role": "Conception, Branding, Web Development"
+                },
+                {
+                    "name": "Luca Antoniazzi",
+                    "role": "Project Management"
+                }
+            ],
+            "tools": [
+                {
+                    "name": "Next.js"
+                },
+                {
+                    "name": "Figma"
+                },
+                {
+                    "name": "Sanity CMS"
+                },
+                {
+                    "name": "Midjourney"
+                }
+            ],
+            "status": "Live",
+            "teaser": [
+                [
+                    {
+                        "type": "heading",
+                        "text": "About"
+                    },
+                    {
+                        "type": "text",
+                        "text": "London-based music supervision house Lost Boy were in need of a new brand and website to showcase their portfolio and improve customer communication. Coupled with a branded email campaign, the website launch sparked collaboration with leading advertising agencies, including Iris Worldwide, Leo Burnett and MullenLowe."
+                    }
+                ]
+            ],
+            "teaserShort": [
+                [
+                    {
+                        "type": "heading",
+                        "text": "About"
+                    },
+                    {
+                        "type": "text",
+                        "text": "New website and brand for London-based music supervision house Lost Boy"
+                    }
+                ]
+            ],
+            "detail": [
+                [
+                    {
+                        "type": "heading",
+                        "text": "Challenge"
+                    },
+                    {
+                        "type": "text",
+                        "text": "For the final project of the MA UX Design at the University of the Arts London, Manfredi and I aimed to motivate young people to invest for environmental impact. We found Gen Z is highly concerned about climate change and interested in investing through brokers and cryptocurrencies. Yet sustainable investing lacks tangibility."
+                    }
+                ],
+                [
+                    {
+                        "type": "heading",
+                        "text": "Solution"
+                    },
+                    {
+                        "type": "text",
+                        "text": "Our designed mobile application features an augmented reality Arctic ice sheet that dynamically represents the amount of ice saved through reduced CO2 emissions. It includes a preferences-based green fund portfolio and emphasises community impact context."
+                    }
+                ]
+            ],
+            "hero": {
+                "type": "image",
+                "src": "/lostboybg.png",
+                "alt": "Screenshot of Lost Boy Website",
+                "h": 2404,
+                "w": 1575
+            },
+            "action": "See more",
+            "externalAction": [
+                {
+                    "href": "https://lostboy.tv/",
+                    "text": "Visit the website"
+                }
+        ]
+        },
+        {
+            "index": 3,
+            "colour": "light",
+            "name": "CardioGuard",
+            "href": "cardioguard",
+            "title": [
+                {
+                    "type": "icon",
+                    "src": "/cardioguard.gif",
+                    "alt": "CardioGuard Icon",
+                    "h": 200,
+                    "w": 200
+                },
+                {
+                    "type": "text",
+                    "text": "CardioGuard"
+                }
+            ],
+            "subtitles": [
+                [
+                    {
+                        "type": "heading",
+                        "text": "About"
+                    },
+                    {
+                        "type": "text",
+                        "text": "Health tracking can be stress-inducing and overwhelming. We designed a monitoring app for heart health and early signs of myocarditis that feels friendly, science-backed and is accessible for elderly users."
+                    }
+                ],
+                [
+                    {
+                        "type": "heading",
+                        "text": "My Role"
+                    },
+                    {
+                        "type": "text",
+                        "text": "User Testing, UI Design"
+                    }
+                ]
+            ],
+            "hero": {
+                "type": "image",
+                "src": "/cardioguardbg5.jpg",
+                "alt": "CardioGuard app screen and Photo of user testing",
+                "h": 3000,
+                "w": 2000
+            },
+            "action": "See more"
+        },
+        {
+            "index": 4,
+            "colour": "dark",
+            "name": "Birdsong",
+            "href": "birdsong",
+            "title": [
+                {
+                    "type": "text",
+                    "text": "Urban Birdsong"
+                }
+            ],
+            "timeFrame": "10-24/11/2022",
+            "myRole": "Perceptional Research, Interactive Technology",
+            "contributors": [
+                {
+                    "name": "Carlotta Montanari"
+                },
+                {
+                    "name": "Lingjia Fang"
+                },
+                {
+                    "name": "Rebecca Hodge"
+                },
+                {
+                    "name": "Roshni Suri"
+                },
+                {
+                    "name": "Me"
+                }
+            ],
+            "tools": [
+                {
+                    "name": "Arduino"
+                },
+                {
+                    "name": "Ableton Live"
+                }
+            ],
+            "status": "Exhibited 2022",
+            "teaser": [
+                [
+                    {
+                        "type": "heading",
+                        "text": "About"
+                    },
+                    {
+                        "type": "text",
+                        "text": "We researched and developed an interactive sound installation that highlights the impact of urban light pollution on the sleep patterns and health of birds."
+                    }
+                ]
+            ],
+            "teaserShort": [
+                [
+                    {
+                        "type": "heading",
+                        "text": "About"
+                    },
+                    {
+                        "type": "text",
+                        "text": "An interactive, light-responsive sound installation highlighting the impact of urban light pollution on birds' sleep patterns"
+                    }
+                ]
+            ],
+            "detail": [
+                [
+                    {
+                        "type": "heading",
+                        "text": "Challenge"
+                    },
+                    {
+                        "type": "text",
+                        "text": "For the final project of the MA UX Design at the University of the Arts London, Manfredi and I aimed to motivate young people to invest for environmental impact. We found Gen Z is highly concerned about climate change and interested in investing through brokers and cryptocurrencies. Yet sustainable investing lacks tangibility."
+                    }
+                ],
+                [
+                    {
+                        "type": "heading",
+                        "text": "Solution"
+                    },
+                    {
+                        "type": "text",
+                        "text": "Our designed mobile application features an augmented reality Arctic ice sheet that dynamically represents the amount of ice saved through reduced CO2 emissions. It includes a preferences-based green fund portfolio and emphasises community impact context."
+                    }
+                ]
+            ],
+            "hero": {
+                "type": "video",
+                "src": "/birdsong.mp4",
+                "alt": "Two people interacting with the Urban Birdsong installation in a dark studio",
+                "thumbnail": "/birdsong5.jpg"
+            },
+            "action": "See more"
+        },
+        {
+            "index": 5,
+            "colour": "light",
+            "name": "Outro",
+            "href": "outro"
+        }
+    ]
+}
