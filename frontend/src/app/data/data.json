@@ -114,7 +114,7 @@
             "myRole": "Data Research, UX Design, Web Development",
             "contributors": [
                 {
-                    "name": "Me",
+                    "name": "Jakob Prüfer",
                     "role": "Data Research, UX Design, Web Development"
                 },
                 {
@@ -186,8 +186,13 @@
                     }
                 ]
             ],
-            "process": [
+            "content": [
                 {
+                    "type": "h2",
+                    "text": "Process"
+                },
+                {
+                    "type": "expandable",
                     "head": [
                       {
                         "type": "phase",
@@ -359,6 +364,7 @@
                     ]
                   },
                   {
+                    "type": "expandable",
                     "head": [
                       {
                         "type": "phase",
@@ -435,6 +441,7 @@
                     ]
                   } ,
                   {
+                    "type": "expandable",
                     "head": [
                       {
                         "type": "phase",
@@ -549,6 +556,7 @@
                     ]
                   },
                   {
+                    "type": "expandable",
                     "head": [
                       {
                         "type": "phase",
@@ -567,20 +575,13 @@
                       }
                     ],
                     "content": [
+                        {
+                            "type": "video",
+                            "src": "/glace/walkthrough.mp4"
+                          },
                       {
                         "type": "caption",
-                        "text": "**Image**: Final Home Screen"
-                      },
-                      {
-                        "type": "image",
-                        "src": "/glace/hifi2.webp",
-                        "alt": "Portfolio Section",
-                        "w": 2000,
-                        "h": 1499
-                      },
-                      {
-                        "type": "caption",
-                        "text": "**Image**: Portfolio Section"
+                        "text": "**Video**: Walkthrough of the final prototype"
                       },
                       {
                         "type": "image",
@@ -592,21 +593,11 @@
                       {
                         "type": "caption",
                         "text": "**Image**: Individual and community impact visualisation"
-                      },
-                      {
-                        "type": "image",
-                        "src": "/glace/settings.jpg",
-                        "alt": "Settings Page",
-                        "w": 2000,
-                        "h": 1125
-                      },
-                      {
-                        "type": "caption",
-                        "text": "**Image**: Settings Page"
                       }
                     ]
                   },
                   {
+                    "type": "expandable",
                     "head": [
                       {
                         "type": "phase",
@@ -642,7 +633,7 @@
                       },
                       {
                         "type": "text",
-                        "text": "To pitch the idea, I created a website with Next.js, TypeScript, HTML, Sass and Framer Motion [glace.earth](https://glace.earth). It features attention grabbing scroll-transitions and mockups of the final prototype. For most of the visual content we leveraged AI image generation and expansion tools."
+                        "text": "To pitch the idea, I created a website with Next.js, TypeScript, HTML, Sass and Framer Motion ([glace.earth](https://glace.earth)). It features attention grabbing scroll-transitions and mockups of the final prototype. For most of the visual content we leveraged AI image generation and expansion tools."
                       },
                       {
                         "type": "video",
@@ -709,12 +700,12 @@
             "myRole": "Conception, Branding, Web Development",
             "contributors": [
                 {
-                    "name": "Me",
+                    "name": "Jakob Prüfer",
                     "role": "Conception, Branding, Web Development"
                 },
                 {
                     "name": "Luca Antoniazzi",
-                    "role": "Project Management"
+                    "role": "Creative Direction"
                 }
             ],
             "tools": [
@@ -778,6 +769,126 @@
                     }
                 ]
             ],
+            "content": [
+                {
+                    "type": "h2",
+                    "text": "Process"
+                },
+                {
+                    "type": "expandable",
+                    "head": [
+                      {
+                        "type": "phase",
+                        "text": "Phase 1"
+                      },
+                      {
+                        "type": "headHeading",
+                        "text": "Research"
+                      },
+                      {
+                        "type": "headImg",
+                        "src": "/lostboy/competitor.jpg",
+                        "alt": "",
+                        "w": 2000,
+                        "h": 1125
+                      }
+                    ],
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "To kick off the project, I conducted analysis on Lost Boy's competitors and potential partners. I analysed the websites and branding of other UK music supervision houses to identify what strategies seemed to be working well and where there were opportunities for differentiation. I found a predominant focus on screen-filling video, however, many audio-focussed sites featured UI that felt outdated and image material not optimised for the size it was scaled to."
+                      },
+                      {
+                        "type": "text",
+                        "text": "In parallel, I explored advertising and creative agencies known for bold, innovative creative work like /RGA and Leo Burnett. These sites aimed to captivate visitors with striking imagery, kinetic type, and layered visual textures. They showed that in the advertising world, websites themselves are a branding exercise - not just vessels for displaying content."
+                      },
+                      {
+                        "type": "text",
+                        "text": "My analysis revealed clear objectives for the Lost Boy site. We needed to:"
+                      },
+                      {
+                        "type": "ol",
+                        "items": [
+                          "Stand out immediately and look different from typical music supervision sites",
+                          "Convey creativity and emotion like high-end advertising firms",
+                          "Maintain minimal, sophisticated design while inviting visitors to interact and explore"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "type": "expandable",
+                    "head": [
+                      {
+                        "type": "phase",
+                        "text": "Phase 2"
+                      },
+                      {
+                        "type": "headHeading",
+                        "text": "Design Ideation"
+                      },
+                      {
+                        "type": "headImg",
+                        "src": "/lostboy/ideation.jpg",
+                        "alt": "",
+                        "w": 2000,
+                        "h": 1125
+                      }
+                    ],
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "With research complete, I moved into conceptualising visual and interaction design approaches for the site. I started by mapping out page structure and content hierarchy, keeping the layout clean and open with large, bold elements to achieve maximum visual impact."
+                      },
+                      {
+                        "type": "text",
+                        "text": "A key branding concept was finding a way to transition the logo from a stacked two-word layout to an inline single-word layout between home and Navigation Bar. I explored ideas around splitting and morphing the logo to accomplish this fluidly. I envisioned a moving starry background that creates a vivid, cinematic mood suited to engaging advertising creatives driven by emotion at the core of their work. We also shifted font selection from clean sans-serifs to elegant serif typefaces that feel classy and prestigious."
+                      },
+                      {
+                        "type": "text",
+                        "text": "For content types, I originally conceived presenting tracks sorted by genre with multiple audio players per page over backdrop videos or images that changed depending on the played track. However, through discussions with the creative director Luca Antoniazzi, we determined this overly busy direction could dilute the cinematic effect we wanted. Instead, we landed on a simplified video-focused layout with classic media players and audio samples underneath."
+                      }
+                    ]
+                  },
+                  {
+                    "type": "expandable",
+                    "head": [
+                      {
+                        "type": "phase",
+                        "text": "Phase 3"
+                      },
+                      {
+                        "type": "headHeading",
+                        "text": "Development"
+                      },
+                      {
+                        "type": "headImg",
+                        "src": "/lostboy/development.jpg",
+                        "alt": "",
+                        "w": 1908,
+                        "h": 1073
+                      }
+                    ],
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "With creative direction set, I developed the site using React, implementing React Router for page transitions and overlay effects on videos for visual interest. The site is fully responsive: on mobile small-screen devices, the navigation is accessed through an animated burger menu."
+                      },
+                      {
+                        "type": "text",
+                        "text": "To invite user interaction, I coded a custom dot cursor that expands when hovered over clickable elements. Applying a difference blend mode filter creates an interesting effect over vibrant colours and sharp edges, an effect also found on the navigation bar over scrolled elements. Another example of inviting interaction is giving the video thumbnails a slight zoom-in on hover."
+                      },
+                      {
+                        "type": "text",
+                        "text": "As requested, some projects can be expanded into full case studies on their respective paths. To demonstrate the iterative process of Lost Boy’s composition, I built custom audio players with live-updating progress indicators and interconnected play/pause functionality between the tracks."
+                      },
+                      {
+                        "type": "text",
+                        "text": "The end result is a website that realises the key objectives identified in research - an emotive, cinematic environment with bold branding and sophisticated interactivity tailored to the advertising world."
+                      }
+                    ]
+                  }                                                                      
+            ],
             "hero": {
                 "type": "image",
                 "src": "/lostboybg.png",
@@ -833,6 +944,63 @@
                     }
                 ]
             ],
+            "timeFrame": "February 2023",
+            "myRole": "User Testing, UI Design",
+            "contributors": [
+                {
+                    "name": "Manfredi Montaretto Marullo"
+                },
+                {
+                    "name": "Jakob Prüfer"
+                }
+            ],
+            "status": "Prototype",
+            "teaser": [
+                [
+                    {
+                        "type": "heading",
+                        "text": "About"
+                    },
+                    {
+                        "type": "text",
+                        "text": "A hearth health tracking app friendly, science-backed and is accessible for elderly users"
+                    }
+                ]
+            ],
+            "teaserShort": [
+                [
+                    {
+                        "type": "heading",
+                        "text": "About"
+                    },
+                    {
+                        "type": "text",
+                        "text": "Hearth health tracking app that feels friendly, science-backed and was tested for accessibility with elderly users"
+                    }
+                ]
+            ],
+            "detail": [
+                [
+                    {
+                        "type": "heading",
+                        "text": "Challenge"
+                    },
+                    {
+                        "type": "text",
+                        "text": "Health tracking can be stress-inducing and overwhelming. Particularly for elderly users there is a gap between usefulness and usability of digital applications."
+                    }
+                ],
+                [
+                    {
+                        "type": "heading",
+                        "text": "Solution"
+                    },
+                    {
+                        "type": "text",
+                        "text": "We designed a monitoring app for heart health and early signs of myocarditis that feels friendly, science-backed and is accessible for elderly users."
+                    }
+                ]
+            ],
             "hero": {
                 "type": "image",
                 "src": "/cardioguardbg5.jpg",
@@ -869,7 +1037,7 @@
                     "name": "Roshni Suri"
                 },
                 {
-                    "name": "Me"
+                    "name": "Jakob Prüfer"
                 }
             ],
             "tools": [
@@ -909,23 +1077,155 @@
                 [
                     {
                         "type": "heading",
-                        "text": "Challenge"
+                        "text": "Brief"
                     },
                     {
                         "type": "text",
-                        "text": "For the final project of the MA UX Design at the University of the Arts London, Manfredi and I aimed to motivate young people to invest for environmental impact. We found Gen Z is highly concerned about climate change and interested in investing through brokers and cryptocurrencies. Yet sustainable investing lacks tangibility."
+                        "text": "We very much understand the world visually, especially when it comes to design. We use the word imagination, derived from the “image”, even when what we imagine are sounds. All the more inviting was the challenge to design around sound, specifically birdsong in an urban environment. Unlike most animals, birds use identical sounds in patterns like we do with our human phonology - even though the sounds don’t seem to carry the same depth of meaning. Birdsong has served as inspiration for various classical composers and can contribute to improved mood and mental health – which I can affirm from personal experience, excluding the sunrise - announcing birdsong that haunts me when I try to fall asleep after a night of dancing."
                     }
                 ],
                 [
                     {
                         "type": "heading",
-                        "text": "Solution"
+                        "text": "Outcome"
                     },
                     {
                         "type": "text",
-                        "text": "Our designed mobile application features an augmented reality Arctic ice sheet that dynamically represents the amount of ice saved through reduced CO2 emissions. It includes a preferences-based green fund portfolio and emphasises community impact context."
+                        "text": "We developed an interactive sound installation that highlights the impact of urban light pollution on the sleep patterns and health of birds. It was exhibited as part of the 'Studio Practices' module at the University of the Arts London."
                     }
                 ]
+            ],
+            "content": [
+                {
+                    "type": "h2",
+                    "text": "Process"
+                },
+                {
+                    "type": "expandable",
+                    "head": [
+                      {
+                        "type": "phase",
+                        "text": "Phase 1"
+                      },
+                    {
+                            "type": "headHeading",
+                            "text": "Soundwalks"
+                        },
+                      {
+                        "type": "headImg",
+                        "src": "/birdsong/klee.jpg",
+                        "alt": "",
+                        "w": 1720,
+                        "h": 967
+                      }
+                    ],
+                    "content": [
+                        {
+                            "type": "caption",
+                            "text": "**Image**: Paul Klee, Vogelgarten, 1924"
+                        },
+                      {
+                        "type": "text",
+                        "text": "We commenced research using the soundwalking methodology, which uses a walk as a tool for active focus on the sonic environment. We decided to conduct soundwalking research separately, each in different areas of London, including central Knightsbridge and South Bank as well as leafy Sydenham. I did mine in Forest Hill and Catford at around 5pm in early winter darkness. The air had a stale quality, lacking altogether the freshness of an evening breeze, and a muffling mist had settled over the hills, blurring the distant skyscrapers, and damping the soundscape. Only twice I heard birds, in two different parks I crossed, but calling from an indiscernible location and quieting as I tried to walk towards the source. Both times it seemed to be the same species, screeching in a short high-pitched tone. I heard various birds of the mechanical kind – with planes crossing over towards Heathrow in intervals of less than 30 seconds - as well as distant police sirens and dog barking, cars, trains, people talking and laughing. My favourite moment was standing in a tucked-away, pitch-black meadow in Ladywell Fields - with all this London soundscape still audible but at the same time hidden away from sight."
+                      },
+                      {
+                        "type": "image",
+                        "src": "/birdsong/routes.jpg",
+                        "alt": "Soundwalk Routes",
+                        "w": 1123,
+                        "h": 881
+                      },
+                      {
+                        "type": "caption",
+                        "text": "**Image**: Soundwalk Routes"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "expandable",
+                    "head": [
+                      {
+                        "type": "phase",
+                        "text": "Phase 2"
+                      },
+                      {
+                        "type": "headHeading",
+                        "text": "Physical Mapping"
+                      },
+                      {
+                        "type": "headImg",
+                        "src": "/birdsong/mapping.jpg",
+                        "alt": "",
+                        "w": 1698,
+                        "h": 955
+                      }
+                    ],
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "From our collective recordings and notes of the soundwalks we identified common themes. An observation that stood out to all of us were the many layers of sound, most of them urban noises. The birdsong was routinely hidden beneath them, only noticed when listening intentionally. From this notion came our first prototype: a sound “sandwich”, made from layers of different materials representing natural and urban sounds. To further develop this idea of representing sound in a physical form, we then listened to the recordings individually and drew on paper what came to our head. Curiously, our sketches were very similar for individual bird species. We used sharp quick lines for screechy sounds and dainty, squiggly lines for melodic singsong. Most of us used notation in lines from left to right reminiscent of traditional musical notation. Following advice from our tutorial, we tried to bring these shapes into 3D form using materials such as toothpicks, fabric, wire and paper. We presented a mapped model of the soundwalks, placing birdsong representations within the cityscape."
+                      },
+                      {
+                        "type": "image",
+                        "src": "/birdsong/mapping2.jpg",
+                        "alt": "",
+                        "w": 1698,
+                        "h": 1192
+                      }
+                    ]
+                  },
+                  {
+                    "type": "expandable",
+                    "head": [
+                      {
+                        "type": "phase",
+                        "text": "Phase 3"
+                      },
+                      {
+                        "type": "headHeading",
+                        "text": "Birdnest Installation"
+                      },
+                      {
+                        "type": "headImg",
+                        "src": "/birdsong/nest.jpg",
+                        "alt": "",
+                        "w": 2000,
+                        "h": 1124
+                      }
+                    ],
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "To find a more unique approach then, we thought about the relationship of birdsong and time of day, as we mostly associated birdsong with sunrise and sunset times. Following further literature review, we then decided to focus on birdsong in connection to urban light pollution. Birds rely on light as cue for their activity and singing patterns. Artificial light at night makes birds sing earlier both in dusk and dawn than they would naturally. It negatively affects their melatonin levels, leading to irregularities in their inner body clock and disrupted sleep. Other negative effects of artificial light include disorientation of migrating birds, worsened stress response and impaired immune function. These findings added a new purpose that we could incorporate in the design if we were able to raise awareness for the issue."
+                      },
+                      {
+                        "type": "image",
+                        "src": "/birdsong/construction.jpg",
+                        "alt": "",
+                        "w": 1667,
+                        "h": 815
+                      },
+                      {
+                        "type": "text",
+                        "text": "We connected with the Creative Technology Lab on campus and borrowed a light sensor with the Arduino microcontroller board to trigger an output. Combining good elements from previous ideas, we settled on the concept of an augmented bird nest that would play sounds based on light shun on it. We built the nest using twigs from a neighbouring park and reinforced it with wire. We then placed the sensor and microcontroller in the middle of the nest covered by more twigs; via a USB cable, we could now trigger any parameter in the digital audio workstation Ableton Live. At different levels of light, low pass filters would open to make more and more birds audible - climaxing in a full choir of reverbed birdsong and loud screeching. The light sensor also controlled a white noise synthesizer, making the pitch higher with more light and adding a slightly threatening tone to the installation."
+                      },
+                      {
+                        "type": "image",
+                        "src": "/birdsong/shadow.jpg",
+                        "alt": "The installation added light and shadow as a second element to the sound",
+                        "w": 2000,
+                        "h": 1334
+                      },
+                      {
+                        "type": "caption",
+                        "text": "**Image**: The installation added light and shadow as a second element to the sound"
+                      },
+                      {
+                        "type": "text",
+                        "text": "We dimmed the room for presentation, setting the scene for the nest in a in a city night-time setting. Participants were given a flashlight and instructed to examine the nest. The experience of surprise and interactivity with the light-reactive sound worked very well."
+                      }
+                    ]
+                  }                                    
             ],
             "hero": {
                 "type": "video",
@@ -939,7 +1239,13 @@
             "index": 5,
             "colour": "light",
             "name": "Outro",
-            "href": "outro"
+            "href": "outro",
+            "title": [
+                {
+                    "type": "text",
+                    "text": "jakob@prufer.co"
+                }
+            ]
         }
     ]
 }

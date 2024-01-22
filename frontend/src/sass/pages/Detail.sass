@@ -12,14 +12,14 @@
         color: $font-dark
 
 .dark section
-    background: #2b2b2b
+    background: $l2-dark
 
 .light section
     background: #fff
 
 .detailContent
     max-width: $detailContent
-    padding: 680px 0 32px 0
+    padding: 680px 0 64px 0
     margin: auto
     line-height: 150%
     display: flex
@@ -28,7 +28,7 @@
     z-index: 3
 
     @media (max-width: $breakMobile)
-        padding: 360px 8vw 32px 8vw
+        padding: 360px 16px 32px 16px
 
     .introGrid
         display: grid
@@ -116,7 +116,7 @@
 
         @media (max-width: $breakMobile)
             padding: 0 16px
-            margin-bottom: 16px
+            margin-bottom: 0
 
     .sectionHead
         display: flex
@@ -126,8 +126,8 @@
         margin: 0 -32px
         cursor: pointer
 
-        // @media (max-width: $breakMobile)
-        //     padding: 16px 32px 0 32px
+        @media (max-width: $breakMobile)
+            padding: 16px 32px 0 32px
         //     // background: red
         //     gap: 8px
 
@@ -141,9 +141,10 @@
         // padding-bottom: -16px
         align-items: center
 
-        // @media (max-width: $breakMobile)
+        @media (max-width: $breakMobile)
+            padding: 8px 26px 4px 32px
+            // min-height: 128px
         //     flex-direction: column
-        //     padding: 16px 32px 8px 32px
         //     align-items: flex-start
 
         .blogImg

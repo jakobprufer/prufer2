@@ -45,10 +45,16 @@ export default function Glace() {
         <div className="detailContent">
           <DetailIntro project={project} />
           <div className="detailProcess">
-            <h2>Process</h2>
-            {project.process.map((section, index) => (
-              <DetailSection key={index} sections={[section]} />
-            ))}
+            {project.content &&
+              project.content.map((section, index) => {
+                if (section.type === "expandable") {
+                  return <DetailSection key={index} sections={[section]} />;
+                } else if (section.type === "h2") {
+                  return <h2 key={index}>{section.text}</h2>;
+                } else {
+                  return null;
+                }
+              })}
           </div>
         </div>
       </FadeIn>

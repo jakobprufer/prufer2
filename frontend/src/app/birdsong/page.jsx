@@ -2,16 +2,12 @@
 import { useState, useEffect } from "react";
 import { useTitleBarStore } from "../store/titleBarStore";
 import { useNavStore } from "../store/navStore";
-import Image from "next/image";
-import { RiNotionFill, RiArrowRightUpLine } from "react-icons/ri";
-import { motion } from "framer-motion";
 import BackButton from "../components/BackButton";
 import data from "../data/data.json";
 import FadeIn from "../components/FadeIn";
 import Hero from "../components/Hero";
-import { renderTextArray } from "../functional/RenderTextArray";
-import { renderTitleParts } from "../functional/RenderTitleParts";
 import DetailIntro from "../components/DetailIntro";
+import DetailSection from "../components/DetailSection";
 
 export default function Birdsong() {
   //select project
@@ -36,6 +32,8 @@ export default function Birdsong() {
     setInside(true);
     setActiveCardId(project.index);
     setLastInside(project.index);
+    document.body.classList = "";
+    document.body.classList.add(project.colour);
   }, []);
 
   return (
@@ -46,6 +44,18 @@ export default function Birdsong() {
         {/* the dublicate hero above fixes the issue of a missing hero detail page refresh/landing */}
         <div className="detailContent">
           <DetailIntro project={project} />
+          <div className="detailProcess">
+            {project.content &&
+              project.content.map((section, index) => {
+                if (section.type === "expandable") {
+                  return <DetailSection key={index} sections={[section]} />;
+                } else if (section.type === "h2") {
+                  return <h2 key={index}>{section.text}</h2>;
+                } else {
+                  return null;
+                }
+              })}
+          </div>
         </div>
       </FadeIn>
     </div>
