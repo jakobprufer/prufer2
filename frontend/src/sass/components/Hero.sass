@@ -3,6 +3,8 @@
     position: absolute
     aspect-ratio: 3/2
     z-index: 1
+    user-select: none
+    pointer-events: none
 
     &.video
         aspect-ratio: 16/9
@@ -24,11 +26,11 @@
 // you can't use a bottom value!    
 .glace
     .hero
-        width: 60vw
+        width: 70vw
         height: auto
         right: -8vw
         transform: translateY(2vh)
-        top: 20vh
+        top: 10vh
 
         @media (max-width: $breakMobile)
             width: 120vw
@@ -38,7 +40,7 @@
         &.inside
             width: 50vw
             right: 25vw
-            top: 128px
+            top: 102px
 
             @media (max-width: $breakMobile)
                 width: 86vw

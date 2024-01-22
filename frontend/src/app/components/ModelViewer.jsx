@@ -1,8 +1,11 @@
 import React, { useEffect, useState } from "react";
 import "@google/model-viewer";
 import "../components/ModelViewer.css";
+import { useNavStore } from "../store/navStore";
 
 const ModelViewer = ({ scrollY }) => {
+  const inside = useNavStore((state) => state.inside);
+
   const [rotation, setRotation] = useState(0);
 
   useEffect(() => {
@@ -12,13 +15,17 @@ const ModelViewer = ({ scrollY }) => {
   }, [scrollY]); // Dependency array ensures this runs only when scrollY changes
 
   return (
-    <div className="modelCont">
+    <div className={`modelCont ${inside ? "inside" : null}`}>
       <model-viewer
         src="/glaceModel.glb" // Replace with your model path
         alt="A 3D model"
         auto-rotate
         camera-controls
-        style={{ width: "600px", height: "600px", background: "00000000" }}
+        style={{
+          width: "600px",
+          height: "600px",
+          background: "00000000",
+        }}
         camera-orbit={`-${rotation}deg 80deg 4m`}
         loading="eager"
         disable-zoom

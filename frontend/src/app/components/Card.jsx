@@ -77,7 +77,7 @@ export default function Card({ project }) {
           </div>
         </motion.div>
       ) : null}
-      {/* {model && <ModelViewer scrollY={scrollY} />} */}
+      {/* {project.model && <ModelViewer scrollY={scrollY} />} */}
       {/* {description && <p className="description">{description}</p>} */}
     </div>
   );

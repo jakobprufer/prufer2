@@ -151,10 +151,9 @@ export default function TitleBar() {
                   {/* <motion.h3 className="mbs mts">About Me</motion.h3> */}
                   <motion.p className="titleBarP mbxs">
                     Hello, I'm Jakob, a UX designer and web developer. Coming
-                    from a background in psychology, I believe that the
-                    challenges of our time can only be approached with an
-                    integrated understanding both of technology and human
-                    behaviour.
+                    from a background in psychology, I believe today's
+                    challenges are best approached with an integrated
+                    understanding of both technology and human behaviour.
                   </motion.p>
                   <motion.p className="titleBarP mbs">
                     Originally from Berlin, I am currently based in London. This

@@ -139,7 +139,7 @@
                     "name": "Notion"
                 }
             ],
-            "status": "App: Prototype, Website: Live",
+            "status": "App: Prototype, Pitch Website: Live",
             "teaser": [
                 [
                     {
@@ -160,7 +160,7 @@
                     },
                     {
                         "type": "text",
-                        "text": "A mobile app showing users how much Arctic ice they help to preserve through their sustainable investments, using augmented reality"
+                        "text": "A mobile app using AI-driven data and augmented reality to show users how much Arctic ice they help to preserve through green investments"
                     }
                 ]
             ],
@@ -186,9 +186,489 @@
                     }
                 ]
             ],
+            "process": [
+                {
+                    "head": [
+                      {
+                        "type": "phase",
+                        "text": "Phase 1"
+                      },
+                      {
+                        "type": "headHeading",
+                        "text": "Research"
+                      },
+                      {
+                        "type": "headImg",
+                        "src": "/glace/cube.webp",
+                        "alt": "Digital illustration of an ice cube on black background",
+                        "h": 1387,
+                        "w": 778
+                      }
+                    ],
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "We conducted research in three stages:"
+                      },
+                      {
+                        "type": "ol",
+                        "items": [
+                          "**Desk research** on impact investing and our target audience",
+                          "**Generative research** including interviews and a drawing workshop",
+                          "**Competitor analysis** and data provider analysis"
+                        ]
+                      },
+                      {
+                        "type": "image",
+                        "src": "/glace/roadmap.webp",
+                        "alt": "The initial roadmap outline for the project",
+                        "w": 1511,
+                        "h": 1105
+                      },
+                      {
+                        "type": "caption",
+                        "text": "**Image:** The initial roadmap outline for the project"
+                      },
+                      {
+                        "type": "h4",
+                        "text": "Desk Research"
+                      },
+                      {
+                        "type": "text",
+                        "text": "As our target audience we chose Generation Z (born between 1995 and 2010), specifically those residing in European urban centres. We found this group is driven by a number of motives in their spending and investing."
+                      },
+                      {
+                        "type": "ul",
+                        "items": [
+                          "**Focus on innovation:** a strong inclination towards spending on technological and design-based innovations",
+                          "**Insistence on convenience:** reliance on convenience, seen in preferences for time-saving devices, easy-to-acquire retail channels, and products with simplified experiences",
+                          "**Desire for security:** Economic challenges shape Generation Z's focus on security, leading to an interest in saving and conservative spending"
+                        ]
+                      },
+                      {
+                        "type": "text",
+                        "text": "We also discovered that people who care about the environment had a propensity to be less interested in or even defensive towards traditional finance. We saw this as an opportunity to shift away from the perception of traditional finance. From financial research we learned that ESG (Environmental, Social, and Governance) ratings are widely viewed as arbitrary and unreliable. We noticed however the emergence of new alternative data suppliers for sustainability data. We furthermore evaluated at a number of asset classes and ultimately decided on impact funds as the investing vehicle."
+                      },
+                      {
+                        "type": "h4",
+                        "text": "Generative Research"
+                      },
+                      {
+                        "type": "image",
+                        "src": "/glace/interviews2.webp",
+                        "alt": "Some of our interviewees",
+                        "w": 2392,
+                        "h": 1040
+                      },
+                      {
+                        "type": "caption",
+                        "text": "**Image:** Some of our interviewees"
+                      },
+                      {
+                        "type": "text",
+                        "text": "We created a comprehensive research plan detailing the questions we aimed to answer. Based on those questions, we decided on in-depth interviews and a workshop as choice of methodology. With advisory help of a senior UX researcher at travel platform eDreams we reviewed our research plan and updated our interview script according to his remarks."
+                      },
+                      {
+                        "type": "image",
+                        "src": "/glace/interviewstats.webp",
+                        "alt": "Interview demographics",
+                        "w": 2240,
+                        "h": 1336
+                      },
+                      {
+                        "type": "caption",
+                        "text": "**Image:** Interview demographics"
+                      },
+                      {
+                        "type": "text",
+                        "text": "Ten individuals from five different nations were interviewed for 20 to 45 minutes. We used affinity mapping and thematic analysis to conceptualise the results."
+                      },
+                      {
+                        "type": "image",
+                        "src": "/glace/transcripts.webp",
+                        "alt": "",
+                        "w": 2000,
+                        "h": 1125
+                      },
+                      {
+                        "type": "image",
+                        "src": "/glace/sticky.webp",
+                        "alt": "",
+                        "w": 2720,
+                        "h": 2268
+                      },
+                      {
+                        "type": "text",
+                        "text": "Key findings included:"
+                      },
+                      {
+                        "type": "ul",
+                        "items": [
+                          "Participants struggled to see their impact in the context of the larger picture",
+                          "Impact investing was not on participants’ minds as much as every day eco-friendly behaviour",
+                          "Key barriers to investing are perceived insufficient wealth and perceived overwhelming complexity",
+                          "Generation Z highly value convenience in investing",
+                          "There is a strong sense of guilt associated with climate change"
+                        ]
+                      },
+                      {
+                        "type": "text",
+                        "text": "In order to gather people's associations with CO2 emissions, we held a drawing workshop. This was meant to assist us in coming up with concepts for the visualisation. We invited 12 individuals from 12 different countries—half from Asia and the other half from Europe— to sketch their first ideas for the following questions: If CO2 Emissions were an object, what would they be? What could be one consequence of reducing CO2 emissions?"
+                      },
+                      {
+                        "type": "image",
+                        "src": "/glace/drawing1.webp",
+                        "alt": "Drawings for the prompt: If CO2 Emissions were an object, what would they be?",
+                        "w": 1792,
+                        "h": 1344
+                      },
+                      {
+                        "type": "caption",
+                        "text": "**Drawings for the prompt:** If CO2 Emissions were an object, what would they be?"
+                      },
+                      {
+                        "type": "image",
+                        "src": "/glace/drawing2.webp",
+                        "alt": "Drawings for the prompt: What could be one consequence of reducing CO2 emissions?",
+                        "w": 1792,
+                        "h": 1344
+                      },
+                      {
+                        "type": "caption",
+                        "text": "**Drawings for the prompt:** What could be one consequence of reducing CO2 emissions?"
+                      },
+                      {
+                        "type": "h4",
+                        "text": "Competitor Analysis"
+                      },
+                      {
+                        "type": "text",
+                        "text": "We analysed a total of 20 sustainable-focussed finance platforms of various types, including Flitinvest, Tomorrow Bank, Moniflo, Wealthfront and CIRCA5000. While sustainability was stressed in their motivations, we discovered that the presentation and user experience were not tailored for a target user that was concerned about the environment but did not understand the financial jargon that might be a barrier to investing."
+                      },
+                      {
+                        "type": "image",
+                        "src": "/glace/competitor.webp",
+                        "alt": "",
+                        "w": 2126,
+                        "h": 1146
+                      },
+                      {
+                        "type": "text",
+                        "text": "When we looked at data providers, we saw an industry that seeks to enhance the reliability and trustworthiness of sustainability ratings, with key players like Clarity AI, Refinitiv, Truevalue Labs, and ESG Book. Clarity AI stood out for its comprehensive data on funds and companies, alignment with UN Sustainable Development Goals and CO2 emissions tracking."
+                      }
+                    ]
+                  },
+                  {
+                    "head": [
+                      {
+                        "type": "phase",
+                        "text": "Phase 2"
+                      },
+                      {
+                        "type": "headHeading",
+                        "text": "Ideation"
+                      },
+                      {
+                        "type": "headImg",
+                        "src": "/glace/datavis.jpg",
+                        "alt": "Data visualisation mood board",
+                        "w": 1920,
+                        "h": 1080
+                      }
+                    ],
+                    "content": [
+                      {
+                        "type": "caption",
+                        "text": "**Image**: Data visualisation mood board"
+                      },
+                      {
+                        "type": "text",
+                        "text": "Following conceptualisation of the research, we chose to focus on people who were already concerned about climate change but were not familiar with finance, since we deemed it difficult to engage typical investors who are primarily motivated by profit maximisation. This meant that we would lower the financial entry barrier and focus on a strong visual storytelling component with our impact visualisation."
+                      },
+                      {
+                        "type": "image",
+                        "src": "/glace/sketches.webp",
+                        "alt": "Early sketches for data visualisation and automatic portfolio",
+                        "w": 3094,
+                        "h": 2166
+                      },
+                      {
+                        "type": "caption",
+                        "text": "**Image**: Early sketches for data visualisation and automatic portfolio"
+                      },
+                      {
+                        "type": "text",
+                        "text": "In order to minimise the entrance barrier, we choose to use an automated portfolio that is based on simple user preferences, akin to a robo-advisor. In terms of customizability, we disagreed in a few areas as we tried to strike the ideal balance between the sense of ownership that comes from having created our own portfolio and the confusion and anxiety that comes with too much complexity."
+                      },
+                      {
+                        "type": "image",
+                        "src": "/glace/ice.webp",
+                        "alt": "",
+                        "w": 1920,
+                        "h": 1080
+                      },
+                      {
+                        "type": "text",
+                        "text": "To visualise impact, we used inspiration from the drawing workshop. Initially we considered showing the volume of reduced CO2 in balloons. A green investment of $5000 for instance could be equivalent to the reduction of 8300 balloons CO2 yearly. We pivoted to Arctic ice as visualisation after finding it elicited a more emotional reaction and was easier to comprehend for our test subjects. The fact that a transatlantic return flight decreases the expanse of September Arctic Sea ice by about 2-3 m2 per passenger was surprising to most."
+                      },
+                      {
+                        "type": "image",
+                        "src": "/glace/data.webp",
+                        "alt": "The scientific paper enabling us to calculate Arctic ice melt from CO2 emissions provided by ClarityAI (in the background)",
+                        "w": 1920,
+                        "h": 1080
+                      },
+                      {
+                        "type": "caption",
+                        "text": "**Image**: The scientific paper enabling us to calculate Arctic ice melt from CO2 emissions provided by ClarityAI (in the background)"
+                      },
+                      {
+                        "type": "text",
+                        "text": "I was glad to pull from earlier financial research to access preliminary data. Assuming that money left in users bank accounts would be invested conventionally, we could now calculate a CO2 reduction for every dollar moved to “Glace”. For this we used the findings from:"
+                      },
+                      {
+                        "type": "ul",
+                        "items": [
+                          "**Notz, D., & Stroeve, J. (2016).** Observed Arctic sea-ice loss directly follows anthropogenic CO2 emission. Science, 354(6313), 747-750."
+                        ]
+                      }
+                    ]
+                  } ,
+                  {
+                    "head": [
+                      {
+                        "type": "phase",
+                        "text": "Phase 3"
+                      },
+                      {
+                        "type": "headHeading",
+                        "text": "Prototyping & Testing"
+                      },
+                      {
+                        "type": "headImg",
+                        "src": "/glace/ar.webp",
+                        "alt": "",
+                        "w": 2000,
+                        "h": 1125
+                      }
+                    ],
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "We developed flow diagrams to determine the initial information architecture in the app and started wireframing a three or four tab structure. The first screen would focus predominantly on impact instead of financial return. We anticipated a challenge in keeping users engaged with the impact and a potential sense of guilt if they consistently bypassed it to access performance data. We refined the structure with low fidelity prototypes in Figma, evaluating various methods of user customisation, impact visualisation and portfolio presentation. We experimented with mobile devices’ haptic feedback to improve the UX of portfolio interactions."
+                      },
+                      {
+                        "type": "image",
+                        "src": "/glace/glaceflow.jpg",
+                        "alt": "",
+                        "w": 1280,
+                        "h": 1638
+                      },
+                      {
+                        "type": "image",
+                        "src": "/glace/wiretable.webp",
+                        "alt": "",
+                        "w": 1024,
+                        "h": 683
+                      },
+                      {
+                        "type": "image",
+                        "src": "/glace/wire1.webp",
+                        "alt": "",
+                        "w": 2000,
+                        "h": 1163
+                      },
+                      {
+                        "type": "text",
+                        "text": "In moderated testing with the low fidelity prototype, we found a disconnect between the user choices and the portfolio composition. We would have to find a way to clarify that the allocation of funds was based on the user choices. We determined that we would provide additional affordance cues to simplify interaction with the portfolio UI. Furthermore, it seemed that our initial dark colour scheme was not perceived as trustworthy for a financial product."
+                      },
+                      {
+                        "type": "image",
+                        "src": "/glace/marta.webp",
+                        "alt": "Notes from low fidelity moderated user testing",
+                        "w": 2042,
+                        "h": 1474
+                      },
+                      {
+                        "type": "caption",
+                        "text": "**Image**: Notes from low fidelity moderated user testing"
+                      },
+                      {
+                        "type": "text",
+                        "text": "For the arctic ice visualisation we iterated through numerous versions of in-app and augmented reality presentation. Challenges included how to give a sense of scale in the internal visualisations and how to shift the focus from individual blame to an optimistic communal perspective. For the augmented reality visualisation Manfredi developed a variable-size 3d model that could be opened in Apple’s AR Quick Look as well as Android’s ARCore."
+                      },
+                      {
+                        "type": "image",
+                        "src": "/glace/oldice3.jpg",
+                        "alt": "Version 1 of the augmented ice visualisation",
+                        "w": 2000,
+                        "h": 1333
+                      },
+                      {
+                        "type": "caption",
+                        "text": "**Image**: Version 1 of the augmented ice visualisation"
+                      },
+                      {
+                        "type": "image",
+                        "src": "/glace/mariele.webp",
+                        "alt": "Mariele Neudecker, Stolen Sunsets, 1996 served as visual inspiration",
+                        "w": 1242,
+                        "h": 1011
+                      },
+                      {
+                        "type": "caption",
+                        "text": "**Image**: Mariele Neudecker, Stolen Sunsets, 1996 served as visual inspiration"
+                      },
+                      {
+                        "type": "video",
+                        "src": "/glace/ar.mp4"
+                      },
+                      {
+                        "type": "caption",
+                        "text": "**Video**: Exploring the AR model on campus"
+                      },
+                      {
+                        "type": "image",
+                        "src": "/glace/icevisit.webp",
+                        "alt": "Iterations of the in-app ice visualisations",
+                        "w": 1974,
+                        "h": 1110
+                      },
+                      {
+                        "type": "caption",
+                        "text": "**Image**: Iterations of the in-app ice visualisations"
+                      },
+                      {
+                        "type": "text",
+                        "text": "Taking into account the findings from testing, our high fidelity prototype featured a dashboard-like home screen that served as an access point to impact visualisation, portfolio performance, settings and app referral. It furthermore included educational articles and deep-dives the most innovative companies included in the funds."
+                      },
+                      {
+                        "type": "text",
+                        "text": "Final testing, with participants completing tasks in the app while thinking out loud, gave us markers for further improvements. Based on those we clarified some of the options in the settings page and adapted the portfolio section to allow a better overview. We were happy to find that most parts of the app, including the important impact visualisation, were received well."
+                      }
+                    ]
+                  },
+                  {
+                    "head": [
+                      {
+                        "type": "phase",
+                        "text": "Phase 4"
+                      },
+                      {
+                        "type": "headHeading",
+                        "text": "Final Prototype"
+                      },
+                      {
+                        "type": "headImg",
+                        "src": "/glace/final.webp",
+                        "alt": "Final Home Screen",
+                        "w": 3370,
+                        "h": 1896
+                      }
+                    ],
+                    "content": [
+                      {
+                        "type": "caption",
+                        "text": "**Image**: Final Home Screen"
+                      },
+                      {
+                        "type": "image",
+                        "src": "/glace/hifi2.webp",
+                        "alt": "Portfolio Section",
+                        "w": 2000,
+                        "h": 1499
+                      },
+                      {
+                        "type": "caption",
+                        "text": "**Image**: Portfolio Section"
+                      },
+                      {
+                        "type": "image",
+                        "src": "/glace/impact.webp",
+                        "alt": "Individual and community impact visualisation",
+                        "w": 1544,
+                        "h": 1158
+                      },
+                      {
+                        "type": "caption",
+                        "text": "**Image**: Individual and community impact visualisation"
+                      },
+                      {
+                        "type": "image",
+                        "src": "/glace/settings.jpg",
+                        "alt": "Settings Page",
+                        "w": 2000,
+                        "h": 1125
+                      },
+                      {
+                        "type": "caption",
+                        "text": "**Image**: Settings Page"
+                      }
+                    ]
+                  },
+                  {
+                    "head": [
+                      {
+                        "type": "phase",
+                        "text": "Phase 5"
+                      },
+                      {
+                        "type": "headHeading",
+                        "text": "Presentation"
+                      },
+                      {
+                        "type": "headImg",
+                        "src": "/glace/brand.webp",
+                        "alt": "",
+                        "w": 2104,
+                        "h": 1183
+                      }
+                    ],
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "After multiple temporary names we settled on the name “Glace” for the platform. Leveraging our initial vibrant colour palette suited for young audiences, we expanded the visual identity with an app icon and style guide. A simplified representation of a rotating fan, literally used to cool an environment down, became our app icon. Using an AI image generator we created ominous, glowing blue ice visuals on dark backgrounds. A top-down image of ice bears helped us to add emotion to the rather technical portrayal of ice surface areas."
+                      },
+                      {
+                        "type": "image",
+                        "src": "/glace/colours.webp",
+                        "alt": "Icon and colour exploration",
+                        "w": 1736,
+                        "h": 977
+                      },
+                      {
+                        "type": "caption",
+                        "text": "**Image**: Icon and colour exploration"
+                      },
+                      {
+                        "type": "text",
+                        "text": "To pitch the idea, I created a website with Next.js, TypeScript, HTML, Sass and Framer Motion [glace.earth](https://glace.earth). It features attention grabbing scroll-transitions and mockups of the final prototype. For most of the visual content we leveraged AI image generation and expansion tools."
+                      },
+                      {
+                        "type": "video",
+                        "src": "/glace/ExpoFinal.mp4"
+                      },
+                      {
+                        "type": "text",
+                        "text": "For graduate showcase exhibition at University of the Arts London I created a video teaser explaining the concept. Apart from the video projection, our exhibition stall featured QR codes to open 3 sizes of our augmented ice sheet. Those were equivalent to yearly CO2 savings from: Using a reusable shopping bag all year, Investing $5000 dollars with “Glace”, Adopting on a plant-based diet."
+                      },
+                      {
+                        "type": "image",
+                        "src": "/glace/glaceexpo.jpg",
+                        "alt": "",
+                        "w": 2423,
+                        "h": 1817
+                      },
+                      {
+                        "type": "text",
+                        "text": "We received great responses during the exhibition and had the chance to connect with entrepreneurs in the sustainability space, agency designers and potential users."
+                      }
+                    ]
+                  }                                                     
+              ],
             "hero": {
                 "type": "image",
-                "src": "/glacebg.jpg",
+                "src": "/glacebg4.jpg",
                 "alt": "Screenshot of Glace App",
                 "h": 2404,
                 "w": 1575
@@ -284,7 +764,7 @@
                     },
                     {
                         "type": "text",
-                        "text": "For the final project of the MA UX Design at the University of the Arts London, Manfredi and I aimed to motivate young people to invest for environmental impact. We found Gen Z is highly concerned about climate change and interested in investing through brokers and cryptocurrencies. Yet sustainable investing lacks tangibility."
+                        "text": "London-based music supervision house Lost Boy needed a new brand and website to better showcase their portfolio and improve customer communication. Their mission is to craft impactful sonic landscapes for top brands, so the site's aesthetic had to align."
                     }
                 ],
                 [
@@ -294,7 +774,7 @@
                     },
                     {
                         "type": "text",
-                        "text": "Our designed mobile application features an augmented reality Arctic ice sheet that dynamically represents the amount of ice saved through reduced CO2 emissions. It includes a preferences-based green fund portfolio and emphasises community impact context."
+                        "text": "I created a logo and visual identity to match Lost Boy's positioning. Using React, JavaScript, HTML and Sass I built a website that highlights their placements in campaigns for global brands. The new brand and site sparked partnerships with leading creative agencies like Iris Worldwide, Leo Burnett and MullenLowe."
                     }
                 ]
             ],
