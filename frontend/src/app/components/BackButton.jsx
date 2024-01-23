@@ -14,6 +14,7 @@ export default function BackButton({ colour }) {
         className={`backButton button container l2 ${colour} iconSlide left`}
         href="/"
       >
+        <div className="hoverShadow"></div>
         <div className="riIconInline">
           <RiArrowLeftLine className="before" />
           <RiArrowLeftLine className="main" />

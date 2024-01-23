@@ -2,6 +2,7 @@
     "portfolio": [
         {
             "index": 0,
+            "type": "info",
             "colour": "dark",
             "name": "Intro",
             "href": "intro",
@@ -94,6 +95,7 @@
         },
         {
             "index": 1,
+            "type": "project",
             "colour": "light",
             "name": "Glace",
             "href": "glace",
@@ -644,13 +646,6 @@
                         "text": "For graduate showcase exhibition at University of the Arts London I created a video teaser explaining the concept. Apart from the video projection, our exhibition stall featured QR codes to open 3 sizes of our augmented ice sheet. Those were equivalent to yearly CO2 savings from: Using a reusable shopping bag all year, Investing $5000 dollars with “Glace”, Adopting on a plant-based diet."
                       },
                       {
-                        "type": "image",
-                        "src": "/glace/glaceexpo.jpg",
-                        "alt": "",
-                        "w": 2423,
-                        "h": 1817
-                      },
-                      {
                         "type": "text",
                         "text": "We received great responses during the exhibition and had the chance to connect with entrepreneurs in the sustainability space, agency designers and potential users."
                       }
@@ -680,6 +675,7 @@
         },
         {
             "index": 2,
+            "type": "project",
             "colour": "dark",
             "name": "lostboy.tv",
             "href": "lostboy",
@@ -906,6 +902,7 @@
         },
         {
             "index": 3,
+            "type": "project",
             "colour": "light",
             "name": "CardioGuard",
             "href": "cardioguard",
@@ -1001,6 +998,226 @@
                     }
                 ]
             ],
+            "content": [
+              {
+                "type": "h2",
+                "text": "Process"
+              },
+              {
+                "type": "expandable",
+                "head": [
+                  {
+                    "type": "phase",
+                    "text": "Phase 1"
+                  },
+                  {
+                    "type": "headHeading",
+                    "text": "Research"
+                  },
+                  {
+                    "type": "headImg",
+                    "src": "/cardioguard/musigk.jpg",
+                    "alt": "Charité Researcher Nicolas Musigk",
+                    "w": 817,
+                    "h": 460
+                  }
+                ],
+                "content": [
+                  {
+                    "type": "caption",
+                    "text": "**Image**: Charité Researcher Nicolas Musigk"
+                  },
+                  {
+                    "type": "text",
+                    "text": "We begun research with a semi-structured interview with a cardiology researcher at Charité in Berlin, who’s PhD thesis looks at early detection of cardiovascular disease. I got a good overview over what patient data and symptoms would be helpful to collect and determined some pain points for doctors and patients in the diagnostic progress."
+                  },
+                  {
+                    "type": "text",
+                    "text": "Research into the current scientific literature confirmed our concept in showing that AI is increasingly making accurate inferences about heart performance from ECG readings alone when other methods of examination would have been necessary in the past. Probing into the behavioural side of health applications, we determined it would be better to keep detailed measurements “under the hood” and only show a general status, as a lay person is often not qualified to judge if abnormal values are just unique traits or pathologic irregularities. We found that to keep engagement with the app as high as possible, simplification of complex data would be effective both for people high and low in health literacy."
+                  },
+                  {
+                    "type": "image",
+                    "src": "/cardioguard/competitors.jpg",
+                    "alt": "",
+                    "w": 1920,
+                    "h": 1080
+                  },
+                  {
+                    "type": "text",
+                    "text": "In a competitor analysis we found that third party apps often did not seem very trustworthy both in method of measurement as well as in presentation and design. Another issue we found with apps like Apple’s “Health” was they presented users with too many values and health aspects so they lost transparency and clarity in UX."
+                  },
+                  {
+                    "type": "text",
+                    "text": "Our overall research takeaway remained: Health tracking and health-related content on the internet can be intimidating and overburdening. Ironically, stress and anxiety have adverse effects on cardiac health. Therefore the app should display only actionable information in a manner that is not anxiety-inducing where it doesn’t need to be."
+                  }
+                ]
+              },
+              {
+                "type": "expandable",
+                "head": [
+                  {
+                    "type": "phase",
+                    "text": "Phase 2"
+                  },
+                  {
+                    "type": "headHeading",
+                    "text": "Definition"
+                  },
+                  {
+                    "type": "headImg",
+                    "src": "/cardioguard/concept.jpg",
+                    "alt": "",
+                    "w": 1920,
+                    "h": 1080
+                  }
+                ],
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "Structuring our research, we then organised data that could be measured, data we needed users to report, personal data needed on sign up and aspects of presentation in an affinity diagram. We concluded that our main focuses for the project were:"
+                  },
+                  {
+                    "type": "ul",
+                    "items": [
+                      "Creating a human and personal touch",
+                      "Make it easy to understand and read",
+                      "Non-frightening presentation and no rushed diagnosis",
+                      "Reminding patients to keep information up to date"
+                    ]
+                  },
+                  {
+                    "type": "text",
+                    "text": "Accordingly, we created personas to further understand users needs and behaviours, such as:"
+                  },
+                  {
+                    "type": "text",
+                    "text": "Mary, 69 years old. Mary is a retired teacher who enjoys gardening and doing yoga. She is concerned about her heart health and wants to monitor her condition regularly, which is why her GP has recommended CardioGuard to her. She has some experience using smartphones but doesn't want to spend too much time figuring out how to use the app. Mary wants the app to be easy to use and understand, and wants to receive alerts if any issues are detected. She gets frustrated when technology is overly complicated or difficult to use."
+                  }
+                ]
+              },
+              {
+                "type": "expandable",
+                "head": [
+                  {
+                    "type": "phase",
+                    "text": "Phase 3"
+                  },
+                  {
+                    "type": "headHeading",
+                    "text": "Ideation"
+                  },
+                  {
+                    "type": "headImg",
+                    "src": "/cardioguard/ideation3.jpg",
+                    "alt": "",
+                    "w": 1920,
+                    "h": 1080
+                  }
+                ],
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "In the ideation stage, I was able to learn a lot from Manfredi who came into the project with a few years of professional design experience. Together we created flow charts to structure the applications functions and to lay out processes like the sign up. We started with hand sketches to get a feel for available space and basic placement, then went on to create digital wireframes."
+                  },
+                  {
+                    "type": "image",
+                    "src": "/cardioguard/flows.jpg",
+                    "alt": "",
+                    "w": 1920,
+                    "h": 1080
+                  },
+                  {
+                    "type": "image",
+                    "src": "/cardioguard/ideation2.jpg",
+                    "alt": "",
+                    "w": 1920,
+                    "h": 1080
+                  },
+                  {
+                    "type": "text",
+                    "text": "We decided we would not use the colour red or alarming language; the main status would only be regular or irregular. For a patient with known issues, the status would still remain regular as long as no changes in condition were detected. We also added an animated doctor mannequin to make the app friendly and provide a character to the name “CardioGuard”."
+                  }
+                ]
+              },
+              {
+                "type": "expandable",
+                "head": [
+                  {
+                    "type": "phase",
+                    "text": "Phase 4"
+                  },
+                  {
+                    "type": "headHeading",
+                    "text": "User Testing"
+                  },
+                  {
+                    "type": "headImg",
+                    "src": "/cardioguard/testing.jpg",
+                    "alt": "",
+                    "w": 1920,
+                    "h": 1080
+                  }
+                ],
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "We tested our Figma prototype with elderly users. This phase for me served as a reminder about how important it is to challenge own assumptions – what might be true and obvious for you might not be the case for every user."
+                  },
+                  {
+                    "type": "image",
+                    "src": "/cardioguard/corrections.jpg",
+                    "alt": "",
+                    "w": 1920,
+                    "h": 1080
+                  },
+                  {
+                    "type": "text",
+                    "text": "For instance, we had put the option to share a report in a three-dot sub menu. When asked to find the function, most of our test subjects did not understand what the three dots meant. Where for our generation it might have been clear that they indicated the presence of “more options”, for someone with lower digital literacy they remained obscure. We therefore decided to make all important functions immediately visible and label icons that might be unclear. We also re-introduced a bottom tab bar to make functions easier to find."
+                  }
+                ]
+              },
+              {
+                "type": "expandable",
+                "head": [
+                  {
+                    "type": "phase",
+                    "text": "Phase 5"
+                  },
+                  {
+                    "type": "headHeading",
+                    "text": "Final Prototype"
+                  },
+                  {
+                    "type": "headImg",
+                    "src": "/cardioguard/final1.jpg",
+                    "alt": "",
+                    "w": 1920,
+                    "h": 1080
+                  }
+                ],
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "After the two-week project we arrived at our current prototype. Here are some impressions including the Figma design system we created in the process."
+                  },
+                  {
+                    "type": "image",
+                    "src": "/cardioguard/final2.jpg",
+                    "alt": "",
+                    "w": 1730,
+                    "h": 1730
+                  }
+                ]
+              },                  
+              {
+                "type": "ul",
+                "items": [
+                  "Reminder to challenge my own assumptions – what might be true and obvious for you might not be the same for every user",
+                  "Improving my design abilities and consideration for accessibility and text size adaptability",
+                  "Highlighting the importance of solid project documentation in teams"
+                ]
+              }
+            ],
             "hero": {
                 "type": "image",
                 "src": "/cardioguardbg5.jpg",
@@ -1012,6 +1229,7 @@
         },
         {
             "index": 4,
+            "type": "project",
             "colour": "dark",
             "name": "Birdsong",
             "href": "birdsong",
@@ -1206,6 +1424,10 @@
                         "h": 815
                       },
                       {
+                        "type": "caption",
+                        "text": "**Image**: Construction of the nest. The sensor was later covered by twigs and leaves"
+                      },
+                      {
                         "type": "text",
                         "text": "We connected with the Creative Technology Lab on campus and borrowed a light sensor with the Arduino microcontroller board to trigger an output. Combining good elements from previous ideas, we settled on the concept of an augmented bird nest that would play sounds based on light shun on it. We built the nest using twigs from a neighbouring park and reinforced it with wire. We then placed the sensor and microcontroller in the middle of the nest covered by more twigs; via a USB cable, we could now trigger any parameter in the digital audio workstation Ableton Live. At different levels of light, low pass filters would open to make more and more birds audible - climaxing in a full choir of reverbed birdsong and loud screeching. The light sensor also controlled a white noise synthesizer, making the pitch higher with more light and adding a slightly threatening tone to the installation."
                       },
@@ -1237,13 +1459,16 @@
         },
         {
             "index": 5,
+            "type": "info",
             "colour": "light",
             "name": "Outro",
             "href": "outro",
+            "preTitle": "Get in touch:",
             "title": [
                 {
-                    "type": "text",
-                    "text": "jakob@prufer.co"
+                    "type": "link",
+                    "text": "jakob@prufer.co",
+                    "href": "mailto:jakob@prufer.co"
                 }
             ]
         }

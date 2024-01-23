@@ -23,6 +23,8 @@ export function renderTitleParts(title, scrollY) {
           {line}
         </span>
       ))
+    ) : part.type === "link" ? (
+      <a href={part.href}>{part.text}</a>
     ) : part.type === "headshot" ? (
       <Image
         alt={part.alt}

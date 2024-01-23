@@ -5,7 +5,6 @@ import ScrollGuide from "./components/ScrollGuide";
 import data from "./data/data.json";
 import { useTitleBarStore } from "./store/titleBarStore.jsx";
 import { useNavStore } from "./store/navStore";
-import "./background.css";
 
 export default function Home() {
   //loading states from stores

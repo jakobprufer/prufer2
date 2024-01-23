@@ -35,6 +35,9 @@ export default function Card({ project }) {
         <motion.div className={`cardContent ${project.colour}`}>
           {project.title && (
             <FadeIn>
+              {project.preTitle && (
+                <div className="preTitle">{project.preTitle}</div>
+              )}
               <div className="title">
                 {renderTitleParts(project.title, scrollY)}
               </div>
@@ -66,6 +69,7 @@ export default function Card({ project }) {
                   href={project.href}
                   onClick={() => handleRouteChange({ href: project.href })}
                 >
+                  <div className="hoverShadow"></div>
                   <div className="buttonText">{project.action}</div>
                   <div className="riIconInline">
                     <RiArrowRightLine className="before" />

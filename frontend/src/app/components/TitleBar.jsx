@@ -7,8 +7,6 @@ import { RiArrowDownLine } from "react-icons/ri";
 import { useTitleBarStore } from "../store/titleBarStore";
 import { useNavStore } from "../store/navStore";
 
-import Jakob from "../../../public/jakob3.jpg";
-
 export default function TitleBar() {
   //getting states from store
   const showTitleBar = useTitleBarStore((state) => state.showTitleBar);
@@ -159,9 +157,13 @@ export default function TitleBar() {
                     Originally from Berlin, I am currently based in London. This
                     portfolio showcases some of my recent work.
                   </motion.p>
-                  <motion.p className="titleBarP mbxs">Get in touch:</motion.p>
+                  <motion.p
+                    className={`titleBarP titleBarTag mbxs ${background}`}
+                  >
+                    Get in touch:
+                  </motion.p>
                   <motion.a
-                    className="titleBarP mbs"
+                    className="titleBarP mbm"
                     href="mailto:jakob@prufer.co"
                     style={{ display: "block" }}
                   >
@@ -169,7 +171,7 @@ export default function TitleBar() {
                   </motion.a>
                   <Image
                     alt="Jakob Prufer standing in front of a white wall glancing to the right"
-                    src={Jakob}
+                    src="/jakob3.jpg"
                     width={1200}
                     height={1200}
                     className="barImage"
