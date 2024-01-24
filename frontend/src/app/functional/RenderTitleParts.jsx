@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 
-export function renderTitleParts(title, scrollY) {
+export function RenderTitleParts(title, scrollY) {
   return title.map((part, index) =>
     part.type === "text" ? (
       part.text.split("\n").map((line, i) => (

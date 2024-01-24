@@ -7,7 +7,7 @@ import { useNavStore } from "../store/navStore";
 import Hero from "./Hero";
 import FadeIn from "./FadeIn";
 import { motion } from "framer-motion";
-import { renderTextArray } from "../functional/RenderTextArray";
+import { RenderTextArray } from "../functional/RenderTextArray";
 import { renderTitleParts } from "../functional/RenderTitleParts";
 
 export default function Card({ project }) {
@@ -41,7 +41,7 @@ export default function Card({ project }) {
                 <div className="preTitle">{project.preTitle}</div>
               )}
               <div className="title">
-                {renderTitleParts(project.title, scrollY)}
+                {RenderTitleParts(project.title, scrollY)}
               </div>
             </FadeIn>
           )}
@@ -51,7 +51,7 @@ export default function Card({ project }) {
                 project.teaserShort.map((item, index) => {
                   return (
                     <div key={index} className="subtitleLine">
-                      {renderTextArray(item)}
+                      {RenderTextArray(item)}
                     </div>
                   );
                 })}

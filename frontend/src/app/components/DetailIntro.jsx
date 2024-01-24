@@ -1,19 +1,19 @@
 "use client";
 import React from "react";
 import { RiArrowRightUpLine } from "react-icons/ri";
-import { renderTextArray } from "../functional/RenderTextArray";
-import { renderTitleParts } from "../functional/RenderTitleParts";
+import { RenderTextArray } from "../functional/RenderTextArray";
+import { RenderTitleParts } from "../functional/RenderTitleParts";
 
 export default function DetailIntro({ project }) {
   return (
     <div className="detailIntro">
-      <h1 className="title">{renderTitleParts(project.title, 0)}</h1>
+      <h1 className="title">{RenderTitleParts(project.title, 0)}</h1>
       <div className="introGrid">
         <div className="column">
           {project.detail &&
             project.detail.map((line, index) => (
               <div key={index} className="subtitleLine">
-                {renderTextArray(line)}
+                {RenderTextArray(line)}
               </div>
             ))}
           {project.externalAction && project.externalAction[0] && (

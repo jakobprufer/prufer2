@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 
-export function renderTextArray(line) {
+export function RenderTextArray(line) {
   return line.map((part, index) => {
     if (part.type === "text") {
       return (
