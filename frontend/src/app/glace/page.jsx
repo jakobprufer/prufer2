@@ -55,7 +55,9 @@ export default function Glace() {
                 } else if (section.type === "h2") {
                   return <h2 key={index}>{section.text}</h2>;
                 } else if (section.type === "feature") {
-                  return <DetailFeature featureId={section.featureId} />;
+                  return (
+                    <DetailFeature featureId={section.featureId} key={index} />
+                  );
                 } else {
                   return null;
                 }
