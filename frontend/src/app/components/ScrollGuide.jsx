@@ -1,6 +1,8 @@
+"use client";
 import { useState, useEffect } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { RiArrowDownLine } from "react-icons/ri";
+import { useWindowSize } from "../functional/useWindowSize";
 
 export default function ScrollGuide({ scrollY }) {
   //hiding scrollBar functionality
@@ -17,11 +19,13 @@ export default function ScrollGuide({ scrollY }) {
   }, [scrollY]);
 
   //scroll functionality
+  const windowSize = useWindowSize();
+
   const scrollToNextSection = () => {
     const snapScrollCont = document.querySelector(".snapScrollCont");
 
     if (snapScrollCont) {
-      const nextSectionTop = snapScrollCont.scrollTop + window.innerHeight;
+      const nextSectionTop = snapScrollCont.scrollTop + windowSize.height;
       snapScrollCont.scrollTo({
         top: nextSectionTop,
         behavior: "smooth",

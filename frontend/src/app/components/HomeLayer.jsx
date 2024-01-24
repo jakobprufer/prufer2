@@ -10,17 +10,17 @@ export default function HomeLayer() {
   const inside = useNavStore((state) => state.inside);
   const activeCardId = useNavStore((state) => state.activeCardId);
   const scrollY = useNavStore((state) => state.scrollY);
-  const lastInside = useNavStore((state) => state.lastInside);
-  const setLastInside = useNavStore((state) => state.setLastInside);
+  // const lastInside = useNavStore((state) => state.lastInside);
+  // const setLastInside = useNavStore((state) => state.setLastInside);
 
   //scroll restoration - using the scrollY from Zustand to set the position and the sessionStorage trigger the restoration
-  useEffect(() => {
-    const snapScrollCont = document.querySelector(".snapScrollCont");
-    if (lastInside) {
-      snapScrollCont.scrollTo(0, scrollY);
-      setLastInside(false);
-    }
-  }, []);
+  // useEffect(() => {
+  //   const snapScrollCont = document.querySelector(".snapScrollCont");
+  //   if (lastInside) {
+  //     snapScrollCont.scrollTo(0, scrollY);
+  //     setLastInside(false);
+  //   }
+  // }, []);
 
   //keeping track of currently active card href
   useEffect(() => {
@@ -29,15 +29,6 @@ export default function HomeLayer() {
       setActiveCard(activeCardHref + "Card");
     }
   }, [activeCardId, data.portfolio]);
-
-  //if user started on detail page, take lastInside to determine scroll position on return home - commented out cause creates bug
-  // useEffect(() => {
-  //   lastInside && !inside
-  //     ? snapScrollCont.scrollTo({
-  //         top: lastInside * window.innerHeight,
-  //       })
-  //     : null;
-  // });
 
   return (
     <div

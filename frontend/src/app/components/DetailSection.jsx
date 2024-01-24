@@ -1,3 +1,4 @@
+"use client";
 import React, { Fragment, useState } from "react";
 import ReactMarkdown from "react-markdown";
 import { motion } from "framer-motion";

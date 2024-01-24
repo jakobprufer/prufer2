@@ -1,3 +1,4 @@
+"use client";
 import React, { useEffect, useState } from "react";
 import "@google/model-viewer";
 import "../components/ModelViewer.css";

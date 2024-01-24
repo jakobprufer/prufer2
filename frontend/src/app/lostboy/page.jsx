@@ -21,7 +21,7 @@ export default function Lostboy() {
   const setShowTitleBar = useTitleBarStore((state) => state.setShowTitleBar);
   const setInside = useNavStore((state) => state.setInside);
   const setActiveCardId = useNavStore((state) => state.setActiveCardId);
-  const setLastInside = useNavStore((state) => state.setLastInside);
+  // const setLastInside = useNavStore((state) => state.setLastInside);
 
   //initializing states correctly for detail page and respective project
   useEffect(() => {
@@ -31,9 +31,11 @@ export default function Lostboy() {
     }, 5);
     setInside(true);
     setActiveCardId(project.index);
-    setLastInside(project.index);
-    document.body.classList = "";
-    document.body.classList.add(project.colour);
+    // setLastInside(project.index);
+    // if (typeof document !== "undefined") {
+    //   document.body.classList = "";
+    //   document.body.classList.add(project.colour);
+    // }
   }, []);
 
   return (

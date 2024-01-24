@@ -1,7 +1,9 @@
+"use client";
 import React from "react";
 import { motion } from "framer-motion";
 import { useNavStore } from "../store/navStore";
 import { useTitleBarStore } from "../store/titleBarStore";
+import { useWindowSize } from "../functional/useWindowSize";
 
 const CarouselIndicator = ({ totalCards }) => {
   //using nav store
@@ -10,16 +12,13 @@ const CarouselIndicator = ({ totalCards }) => {
 
   const dots = Array.from({ length: totalCards }, (_, index) => index);
 
+  //dot click handler
+  const windowSize = useWindowSize();
+
   const handleDotClick = (index) => {
-    const snapScrollCont = document.querySelector(".snapScrollCont");
-    const cards = document.querySelectorAll(".card");
-
-    // Calculate the scroll position based on the clicked dot's index
-    const scrollToY = cards[index].offsetTop;
-
     // Use smooth scrolling
     snapScrollCont.scrollTo({
-      top: scrollToY,
+      top: index * windowSize.height,
       behavior: "smooth",
     });
   };

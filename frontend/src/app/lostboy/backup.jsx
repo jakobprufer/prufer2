@@ -22,7 +22,7 @@ export default function LostBoy() {
   const setShowTitleBar = useTitleBarStore((state) => state.setShowTitleBar);
   const setInside = useNavStore((state) => state.setInside);
   const setActiveCardId = useNavStore((state) => state.setActiveCardId);
-  const setLastInside = useNavStore((state) => state.setLastInside);
+  // const setLastInside = useNavStore((state) => state.setLastInside);
 
   //initializing states correctly for detail page and respective project
   useEffect(() => {
@@ -32,7 +32,7 @@ export default function LostBoy() {
     }, 5);
     setInside(true);
     setActiveCardId(project.index);
-    setLastInside(project.index);
+    // setLastInside(project.index);
   }, []);
 
   return (

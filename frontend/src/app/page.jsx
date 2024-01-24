@@ -76,10 +76,10 @@ export default function Home() {
   }, []);
 
   //updating body background colour through background.css
-  useEffect(() => {
-    document.body.classList = "";
-    document.body.classList.add(background);
-  }, [background]);
+  // useEffect(() => {
+  //   document.body.classList = "";
+  //   document.body.classList.add(background);
+  // }, [background]);
 
   return (
     <main className={`page ${background}`}>

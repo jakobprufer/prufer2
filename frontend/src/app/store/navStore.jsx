@@ -9,6 +9,8 @@ export const useNavStore = create((set) => ({
   setScrollY: (scrollY) => set({ scrollY }),
   inside: false,
   setInside: (inside) => set({ inside }),
-  lastInside: 0,
-  setLastInside: (lastInside) => set({ lastInside }),
+  // pathMarker: null,
+  // setPathMarker: (pathMarker) => set({ pathMarker }),
+  // lastInside: 0,
+  // setLastInside: (lastInside) => set({ lastInside }),
 }));

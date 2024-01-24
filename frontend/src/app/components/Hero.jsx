@@ -1,3 +1,4 @@
+"use client";
 import React, { Fragment, useRef, useEffect } from "react";
 import { useNavStore } from "../store/navStore";
 import StarryBackground from "./StarryBackground";
@@ -6,8 +7,8 @@ import { Parallax } from "react-scroll-parallax";
 
 export default function Hero({ project, inside }) {
   //getting states from nav store
-  const insideCopy = inside ? inside : useNavStore((state) => state.inside);
-  const scrollY = useNavStore((state) => state.scrollY);
+  const storedInside = useNavStore((state) => state.inside);
+  const insideCopy = inside ? inside : storedInside;
 
   //stop video on detail enter
   const videoRef = useRef(null); // Ref for the video element
@@ -22,14 +23,7 @@ export default function Hero({ project, inside }) {
   return (
     <Fragment>
       {project.hero && project.hero.type === "image" ? (
-        <div
-          className={`hero ${insideCopy ? "inside" : null}`}
-          // style={{
-          //   transform: `translateY(${
-          //     (scrollY - project.index * window.innerHeight) / 4
-          //   }px)`,
-          // }}
-        >
+        <div className={`hero ${insideCopy ? "inside" : null}`}>
           <Image
             alt={project.hero.alt}
             src={project.hero.src}
@@ -41,16 +35,8 @@ export default function Hero({ project, inside }) {
         </div>
       ) : null}
       {project.hero && project.hero.type === "video" ? (
-        <div
-          className={`hero video ${insideCopy ? "inside" : null}`}
-          // style={{
-          //   transform: `translateY(${
-          //     (scrollY - project.index * window.innerHeight) / 4
-          //   }px)`,
-          // }}
-        >
+        <div className={`hero video ${insideCopy ? "inside" : null}`}>
           <video
-            // autoPlay
             loop
             muted={insideCopy ? false : true}
             playsInline

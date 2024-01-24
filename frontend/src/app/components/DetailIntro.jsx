@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import { RiArrowRightUpLine } from "react-icons/ri";
 import { renderTextArray } from "../functional/renderTextArray";

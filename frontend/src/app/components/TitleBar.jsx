@@ -6,6 +6,7 @@ import Image from "next/image";
 import { RiArrowDownLine } from "react-icons/ri";
 import { useTitleBarStore } from "../store/titleBarStore";
 import { useNavStore } from "../store/navStore";
+import { useWindowSize } from "../functional/useWindowSize";
 
 export default function TitleBar() {
   //getting states from store
@@ -26,8 +27,10 @@ export default function TitleBar() {
   const inside = useNavStore((state) => state.inside);
 
   //showing TitleBar depending on scroll position
+  const windowSize = useWindowSize();
+
   useEffect(() => {
-    if (scrollY > window.innerHeight * 0.9) {
+    if (scrollY > windowSize.height * 0.9) {
       setShowTitleBar(true);
     } else {
       setExpandTitleBar(false);
@@ -52,21 +55,19 @@ export default function TitleBar() {
   };
 
   //big breakpoint - needed because layout breaks framer animations on mobile (so deactivating it for small screen sizes)
-  const [smallScreen, setSmallScreen] = useState(false);
+  // const [smallScreen, setSmallScreen] = useState(false);
 
-  useEffect(() => {
-    const handleResize = () => {
-      setSmallScreen(window.innerWidth < 600);
-    };
+  // useEffect(() => {
+  //   const handleResize = () => {
+  //     setSmallScreen(windowSize.width < 600);
+  //   };
 
-    if (typeof window !== "undefined") {
-      window.addEventListener("resize", handleResize);
+  //   window.addEventListener("resize", handleResize);
 
-      return () => {
-        window.removeEventListener("resize", handleResize);
-      };
-    }
-  }, []);
+  //   return () => {
+  //     window.removeEventListener("resize", handleResize);
+  //   };
+  // }, []);
 
   //scroll to top functionality
   const scrollToTop = () => {
@@ -91,8 +92,6 @@ export default function TitleBar() {
         <AnimatePresence>
           {showTitleBar ? (
             <motion.div
-              // layout={smallScreen ? true : false}
-              // needed because layout breaks framer animations on mobile (so deactivating it for small screen sizes)
               className={`titleBar container l2 ${background} ${
                 inside ? "inside" : null
               } ${expandTitleBarInst ? "expanded" : null}`}
@@ -105,7 +104,6 @@ export default function TitleBar() {
                 boxShadow: "0px 10px 20px #00000019",
               }} //inline because of framer motion bug
               transition={{
-                // layout: { duration: 0.2, ease: "easeInOut" },
                 y: {
                   duration: 0.3,
                   type: "spring",
@@ -115,11 +113,7 @@ export default function TitleBar() {
                 },
               }}
             >
-              <motion.div
-                className="titleBarTop"
-                // layout={smallScreen ? "position" : false}
-                // needed because layout breaks framer animations on mobile (so deactivating it for small screen sizes)
-              >
+              <motion.div className="titleBarTop">
                 <Link className="titleBarLeft" href="/" onClick={scrollToTop}>
                   <span className="barLogoText link">Jakob Prüfer</span>
                 </Link>
@@ -128,7 +122,6 @@ export default function TitleBar() {
                     expandTitleBarInst ? "fixed" : null
                   }`}
                   onClick={handleExpandTitleBar}
-                  // layout={smallScreen ? "position" : false}
                 >
                   <div className="buttonText">About</div>{" "}
                   <RiArrowDownLine
@@ -148,10 +141,11 @@ export default function TitleBar() {
                 >
                   {/* <motion.h3 className="mbs mts">About Me</motion.h3> */}
                   <motion.p className="titleBarP mbxs">
-                    Hello, I'm Jakob, a UX designer and web developer. Coming
-                    from a background in psychology, I believe today's
-                    challenges are best approached with an integrated
-                    understanding of both technology and human behaviour.
+                    Hello, I&apos;m Jakob, a UX designer and web developer.
+                    Coming from a background in psychology, I believe
+                    today&apos;s challenges are best approached with an
+                    integrated understanding of both technology and human
+                    behaviour.
                   </motion.p>
                   <motion.p className="titleBarP mbs">
                     Originally from Berlin, I am currently based in London. This
