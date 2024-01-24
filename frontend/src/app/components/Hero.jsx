@@ -3,7 +3,6 @@ import React, { Fragment, useRef, useEffect } from "react";
 import { useNavStore } from "../store/navStore";
 import StarryBackground from "./StarryBackground";
 import Image from "next/image";
-import { Parallax } from "react-scroll-parallax";
 
 export default function Hero({ project, inside }) {
   //getting states from nav store
