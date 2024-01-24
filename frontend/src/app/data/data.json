@@ -190,6 +190,10 @@
             ],
             "content": [
                 {
+                    "type": "feature",
+                    "featureId": "glacemodel"
+                },
+                {
                     "type": "h2",
                     "text": "Process"
                 },
