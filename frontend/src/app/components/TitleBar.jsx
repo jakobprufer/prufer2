@@ -6,7 +6,7 @@ import Image from "next/image";
 import { RiArrowDownLine } from "react-icons/ri";
 import { useTitleBarStore } from "../store/titleBarStore";
 import { useNavStore } from "../store/navStore";
-import { useWindowSize } from "../functional/useWindowSize";
+import { useWindowSize } from "../functional/UseWindowSize";
 
 export default function TitleBar() {
   //getting states from store

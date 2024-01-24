@@ -1,8 +1,8 @@
 "use client";
 import React from "react";
 import { RiArrowRightUpLine } from "react-icons/ri";
-import { renderTextArray } from "../functional/renderTextArray";
-import { renderTitleParts } from "../functional/renderTitleParts";
+import { renderTextArray } from "../functional/RenderTextArray";
+import { renderTitleParts } from "../functional/RenderTitleParts";
 
 export default function DetailIntro({ project }) {
   return (

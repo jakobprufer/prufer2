@@ -2,7 +2,7 @@
 import { useState, useEffect } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { RiArrowDownLine } from "react-icons/ri";
-import { useWindowSize } from "../functional/useWindowSize";
+import { useWindowSize } from "../functional/UseWindowSize";
 
 export default function ScrollGuide({ scrollY }) {
   //hiding scrollBar functionality
