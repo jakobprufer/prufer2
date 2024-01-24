@@ -3,6 +3,7 @@ import React, { useEffect, useState, useRef } from "react";
 import "../components/ModelViewer.css";
 import { useNavStore } from "../store/navStore";
 import { Asap } from "next/font/google";
+import { RiLoader3Line } from "react-icons/ri";
 
 const ModelViewer = () => {
   useEffect(() => {
@@ -34,6 +35,7 @@ const ModelViewer = () => {
 
   //load model functionality
   const [model, setModel] = useState(null);
+  const [modelSpinner, setModelSpinner] = useState(false);
 
   useEffect(() => {
     const modelElement = document.querySelector("#model");
@@ -66,11 +68,19 @@ const ModelViewer = () => {
         <div id="lazy-load-poster" slot="poster"></div>
         <div
           id="button-load"
-          className="button"
+          className={`button iconReveal ${
+            modelSpinner ? "fixed fixedHover" : null
+          }`}
           slot="poster"
-          onClick={() => model.dismissPoster()}
+          onClick={() => {
+            model.dismissPoster();
+            setModelSpinner(true);
+          }}
         >
-          Load 3D Model
+          <div className="buttonText">Load 3D Model</div>
+          <RiLoader3Line
+            className={`riIconInline ${modelSpinner ? "spinning" : null}`}
+          />
         </div>
       </model-viewer>
     </div>

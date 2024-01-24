@@ -236,18 +236,18 @@ html
         transition: transform .2s ease
 
 //hover
-.button.iconReveal:hover
+.button.iconReveal:hover, .button.iconReveal.fixedHover
     padding-left: 38px
 
-.iconReveal:hover .riIconInline
-    background: #84848454
-    transform: scale(1)
+    .riIconInline
+        background: #84848454
+        transform: scale(1)
 
-    &.turned
-        transform: scale(1) rotate(180deg)
+        &.turned
+            transform: scale(1) rotate(180deg)
 
-.iconReveal:hover .buttonText
-    transform: translateX(-24px)
+    .buttonText
+        transform: translateX(-24px)
 
 //fixed (activestate)
 // .button.iconReveal.fixed
