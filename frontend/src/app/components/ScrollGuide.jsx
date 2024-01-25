@@ -2,7 +2,7 @@
 import { useState, useEffect } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { RiArrowDownLine } from "react-icons/ri";
-import { useWindowSize } from "../functional/UseWindowSize";
+import { UseWindowSize } from "../functional/UseWindowSize.jsx";
 
 export default function ScrollGuide({ scrollY }) {
   //hiding scrollBar functionality
@@ -19,7 +19,7 @@ export default function ScrollGuide({ scrollY }) {
   }, [scrollY]);
 
   //scroll functionality
-  const windowSize = useWindowSize();
+  const windowSize = UseWindowSize();
 
   const scrollToNextSection = () => {
     const snapScrollCont = document.querySelector(".snapScrollCont");

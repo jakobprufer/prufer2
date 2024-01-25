@@ -3,7 +3,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { useNavStore } from "../store/navStore";
 import { useTitleBarStore } from "../store/titleBarStore";
-import { useWindowSize } from "../functional/UseWindowSize";
+import { UseWindowSize } from "../functional/UseWindowSize.jsx";
 
 const CarouselIndicator = ({ totalCards }) => {
   //using nav store
@@ -13,7 +13,7 @@ const CarouselIndicator = ({ totalCards }) => {
   const dots = Array.from({ length: totalCards }, (_, index) => index);
 
   //dot click handler
-  const windowSize = useWindowSize();
+  const windowSize = UseWindowSize();
 
   const handleDotClick = (index) => {
     // Use smooth scrolling

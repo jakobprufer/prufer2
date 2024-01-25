@@ -6,7 +6,7 @@ import Image from "next/image";
 import { RiArrowDownLine } from "react-icons/ri";
 import { useTitleBarStore } from "../store/titleBarStore";
 import { useNavStore } from "../store/navStore";
-import { useWindowSize } from "../functional/UseWindowSize";
+import { UseWindowSize } from "../functional/UseWindowSize";
 
 export default function TitleBar() {
   //getting states from store
@@ -27,7 +27,7 @@ export default function TitleBar() {
   const inside = useNavStore((state) => state.inside);
 
   //showing TitleBar depending on scroll position
-  const windowSize = useWindowSize();
+  const windowSize = UseWindowSize();
 
   useEffect(() => {
     if (scrollY > windowSize.height * 0.9) {
