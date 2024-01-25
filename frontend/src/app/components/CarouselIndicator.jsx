@@ -3,7 +3,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { useNavStore } from "../store/navStore";
 import { useTitleBarStore } from "../store/titleBarStore";
-import { UseWindowSize } from "../functional/UseWindowSize.jsx";
+import { UseWindowSize } from "../functional/löaksjdf.jsx";
 
 const CarouselIndicator = ({ totalCards }) => {
   //using nav store
