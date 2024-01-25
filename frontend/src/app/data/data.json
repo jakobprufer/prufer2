@@ -771,6 +771,10 @@
             ],
             "content": [
                 {
+                  "type": "feature",
+                  "featureId": "lostboylogo"
+                },
+                {
                     "type": "h2",
                     "text": "Process"
                 },

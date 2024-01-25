@@ -1,10 +1,20 @@
 
 .detailFeature
     width: 100%
-    background: $grey-light
     border-radius: 24px
     position: relative
     overflow: hidden
+
+    .featureButton
+        position: absolute
+        right: 32px
+        bottom: 24px
+
+.light .detailFeature
+    background: $grey-light
+
+.dark .detailFeature
+    background: $grey-dark
 
 .glace
     .detailFeature
@@ -36,6 +46,7 @@
             top: 0
             width: 100%
             height: 100%
+            background-image: url("/glaceModel.jpg")
             background-size: contain
             background-repeat: no-repeat
             background-position: center
@@ -43,17 +54,38 @@
             filter: blur(50px)
 
         #button-load
-            position: absolute
-            bottom: 24px
-            right: 32px
-            padding-top: 10px
-            padding-bottom: 10px
-            padding-right: 16px
-            padding-left: 16px
-            border-radius: 24px
-            height: 38px
             background: #f4f4f4
 
             &:hover, &.fixedHover
                 background: white
-                padding-left: 38px
+                // padding-left: 38px
+
+.lostboy
+    .detailFeature
+        aspect-ratio: 3/2
+        position: relative
+
+        .logo1, .logo2
+            position: absolute
+            width: 20%
+            height: auto
+            transition: .2s ease-out
+
+            &.stacked
+                width: 60%
+
+        .logo1
+            left: 5%
+            top: 5%
+
+            &.stacked
+                left: 5%
+                top: 0
+
+        .logo2
+            top: 5%
+            left: 25%
+
+            &.stacked
+                left: 20.7%
+                top: 29%

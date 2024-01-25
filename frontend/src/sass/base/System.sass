@@ -54,26 +54,31 @@ html
     user-select: none
     display: flex
     gap: 8px
-    align-items: center
     width: fit-content
-    height: fit-content
+    height: 48px
+    align-items: center
+    padding: 0 16px
+    border-radius: 24px
 
-.link
+    &.slim
+        height: 40px
+
+.clickable
     cursor: pointer
 
-.riIconInline
+.buttonIcon
     position: relative
     overflow: hidden
-    top: 0.15em
-    margin-top: -0.2em
     width: 20px
     height: 20px
-    padding: 2px
+    display: flex
+    justify-content: center
+    align-items: center
     border-radius: 10px
+    padding: 2px
 
 .container
     transition: background .2s
-    padding: 4px 16px
     border-radius: 24px
     width: fit-content
     // z-index: 10
@@ -101,14 +106,14 @@ html
 
     //a button inside
     .button
-        padding-top: 10px
-        padding-bottom: 10px
-        padding-right: 16px
-        padding-left: 16px
-        border-radius: 18px
+        // padding-top: 10px
+        // padding-bottom: 10px
+        // padding-right: 16px
+        // padding-left: 16px
+        // border-radius: 18px
         transition: background .2s
-        margin-right: -11px
-        margin-left: -11px
+        // margin-right: -11px
+        // margin-left: -11px
 
         &.fixed
             background: $button-hover
@@ -118,7 +123,7 @@ html
 
     //is a button
 .container.button
-    padding: 12px 16px
+    // padding: 12px 16px
     transition: background .2s
     // position: relative
 
@@ -147,7 +152,7 @@ html
     opacity: 1
 
 //icon slide animation right
-.iconSlide.right .riIconInline
+.iconSlide.right .buttonIcon
     transition: .2s ease
 
     .before
@@ -159,7 +164,7 @@ html
     .main
         transition: .2s ease
 
-.iconSlide.right:hover .riIconInline
+.iconSlide.right:hover .buttonIcon
     background: #84848454
 
     .main
@@ -169,22 +174,21 @@ html
         left: 2px
 
 //icon slide animation rightup
-.iconSlide.rightup .riIconInline
-    transition: .2s ease
+.iconSlide.rightup .buttonIcon
+    transition: .2s
 
     .before
         position: absolute
         left: -16px
         top: 16px
-        transition: .2s ease
+        transition: .2s
         // color: $font-light
 
     .main
-        transition: .2s ease
-        top: 0px
-        transform: translateY(-2px)
+        transition: .2s
+        top: 4px
 
-.iconSlide.rightup:hover .riIconInline
+.iconSlide.rightup:hover .buttonIcon
     background: #84848454
 
     .main
@@ -196,7 +200,7 @@ html
 
 //icon slide animation left        
 
-.iconSlide.left .riIconInline
+.iconSlide.left .buttonIcon
     transition: .2s ease
 
     .before
@@ -208,7 +212,7 @@ html
     .main
         transition: .2s ease
 
-.iconSlide.left:hover .riIconInline
+.iconSlide.left:hover .buttonIcon
     background: #84848454
 
     .main
@@ -222,12 +226,13 @@ html
     position: relative
     transition: .2s ease
 
-    .riIconInline
-        position: absolute
-        right: 12px
-        top: 12px
+    .buttonIcon
+        // position: absolute
         transform: scale(0)
         transition: .2s ease
+        width: 0px
+        padding: 0px
+        margin-left: -8px
 
         &.turned
             transform: scale(0) rotate(180deg)
@@ -237,23 +242,26 @@ html
 
 //hover
 .button.iconReveal:hover, .button.iconReveal.fixedHover
-    padding-left: 38px
+    // padding-left: 38px
 
-    .riIconInline
+    .buttonIcon
         background: #84848454
         transform: scale(1)
+        width: 20px
+        padding: 2px
+        margin-left: 0
 
         &.turned
             transform: scale(1) rotate(180deg)
 
     .buttonText
-        transform: translateX(-24px)
+        // transform: translateX(-24px)
 
 //fixed (activestate)
 // .button.iconReveal.fixed
 //     padding-left: 38px
 
-// .iconReveal.fixed .riIconInline
+// .iconReveal.fixed .inlineIcon
 //     background: #84848454
 //     transform: scale(1)
 

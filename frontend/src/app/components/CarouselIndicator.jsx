@@ -34,7 +34,7 @@ const CarouselIndicator = ({ totalCards }) => {
         <motion.div
           layout
           key={index}
-          className={`dot button`}
+          className={`dot clickable`}
           onClick={() => handleDotClick(index)} // Add onClick handler
         >
           {index === activeCardId ? (

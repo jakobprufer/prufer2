@@ -118,14 +118,14 @@ export default function TitleBar() {
                   <span className="barLogoText link">Jakob Prüfer</span>
                 </Link>
                 <motion.div
-                  className={`button iconReveal ${
+                  className={`button slim iconReveal titleBarButton ${
                     expandTitleBarInst ? "fixed" : null
                   }`}
                   onClick={handleExpandTitleBar}
                 >
                   <div className="buttonText">About</div>{" "}
                   <RiArrowDownLine
-                    className={`riIconInline ${
+                    className={`buttonIcon ${
                       expandTitleBarInst ? "turned" : null
                     }`}
                   />

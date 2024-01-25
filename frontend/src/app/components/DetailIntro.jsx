@@ -22,7 +22,7 @@ export default function DetailIntro({ project }) {
               href={project.externalAction[0].href}
             >
               <div className="buttonText">{project.externalAction[0].text}</div>
-              <div className="riIconInline">
+              <div className="buttonIcon">
                 <RiArrowRightUpLine className="before" />
                 <RiArrowRightUpLine className="main" />
               </div>

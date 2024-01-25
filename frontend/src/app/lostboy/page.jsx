@@ -8,6 +8,7 @@ import FadeIn from "../components/FadeIn";
 import Hero from "../components/Hero";
 import DetailIntro from "../components/DetailIntro";
 import DetailSection from "../components/DetailSection";
+import DetailFeature from "../components/DetailFeature";
 
 export default function Lostboy() {
   //select project
@@ -53,6 +54,10 @@ export default function Lostboy() {
                   return <DetailSection key={index} sections={[section]} />;
                 } else if (section.type === "h2") {
                   return <h2 key={index}>{section.text}</h2>;
+                } else if (section.type === "feature") {
+                  return (
+                    <DetailFeature featureId={section.featureId} key={index} />
+                  );
                 } else {
                   return null;
                 }

@@ -16,7 +16,7 @@ export default function BackButton({ colour }) {
         href="/"
       >
         <div className="hoverShadow"></div>
-        <div className="riIconInline">
+        <div className="buttonIcon">
           <RiArrowLeftLine className="before" />
           <RiArrowLeftLine className="main" />
         </div>

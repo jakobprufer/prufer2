@@ -73,7 +73,7 @@ export default function Card({ project }) {
                 >
                   <div className="hoverShadow"></div>
                   <div className="buttonText">{project.action}</div>
-                  <div className="riIconInline">
+                  <div className="buttonIcon">
                     <RiArrowRightLine className="before" />
                     <RiArrowRightLine className="main" />
                   </div>

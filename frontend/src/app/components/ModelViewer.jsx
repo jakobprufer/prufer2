@@ -68,7 +68,7 @@ const ModelViewer = () => {
         <div id="lazy-load-poster" slot="poster"></div>
         <div
           id="button-load"
-          className={`button iconReveal ${
+          className={`button featureButton iconReveal ${
             modelSpinner ? "fixed fixedHover" : null
           }`}
           slot="poster"
@@ -79,7 +79,7 @@ const ModelViewer = () => {
         >
           <div className="buttonText">Load 3D Model</div>
           <RiLoader3Line
-            className={`riIconInline ${modelSpinner ? "spinning" : null}`}
+            className={`buttonIcon ${modelSpinner ? "spinning" : null}`}
           />
         </div>
       </model-viewer>

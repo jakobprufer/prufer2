@@ -53,7 +53,7 @@ export default function ScrollGuide({ scrollY }) {
               },
             }}
           >
-            <RiArrowDownLine className="riIconInline" />
+            <RiArrowDownLine className="inlineIcon" />
             <div>Scroll down for projects</div>
           </motion.div>
         ) : null}
