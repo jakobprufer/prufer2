@@ -7,8 +7,7 @@ import { useNavStore } from "../store/navStore";
 import Hero from "./Hero";
 import FadeIn from "./FadeIn";
 import { motion } from "framer-motion";
-import { RenderTextArray } from "../functional/RenderTextArray";
-import { renderTitleParts } from "../functional/RenderTitleParts";
+import { RenderTextArray } from "../functional/RenderTextArray.jsx";
 
 export default function Card({ project }) {
   //using nav store
