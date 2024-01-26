@@ -28,7 +28,7 @@
     z-index: 3
 
     @media (max-width: $breakMobile)
-        padding: 360px 20px 32px 20px
+        padding: 360px 28px 32px 28px
 
     .introGrid
         display: grid
@@ -113,6 +113,7 @@
         @media (max-width: $breakMobile)
             padding: 0 16px
             margin-bottom: 0
+            margin-top: -8px
 
     .sectionHead
         display: flex
@@ -165,6 +166,9 @@
         flex-direction: column
         // gap: 4px
         flex-grow: 2
+
+        @media (max-width: $breakMobile)
+            transform: translateY(-4px)
 
     .phase
         margin-bottom: -2px

@@ -112,6 +112,10 @@
         margin-bottom: 32px
         margin-left: 64px
 
+        @media (max-width: $breakMobile)
+            font-size: 32pt
+            margin-left: 0px
+
     .subtitles
         gap: 16px
         display: none
@@ -127,6 +131,10 @@
         margin-right: 0.5em
         top: 10vh
         margin-top: -10vh
+
+        @media (max-width: $breakMobile)
+            width: 15vh
+            height: 20vh
 
     .titleText
         display: block
@@ -163,6 +171,9 @@
 .outro
     .cardContent
         align-items: center
+
+        @media (max-width: $breakMobile)
+            justify-content: center
 
     // .title
     //     font-size: 7vw

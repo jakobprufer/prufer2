@@ -1,5 +1,5 @@
 "use client";
-import React, { Fragment, useRef, useEffect } from "react";
+import React, { Fragment, useRef, useEffect, useState } from "react";
 import { useNavStore } from "../store/navStore";
 import StarryBackground from "./StarryBackground";
 import Image from "next/image";
@@ -19,6 +19,9 @@ export default function Hero({ project, inside }) {
     }
   }, [insideCopy]); // Dependency array includes insideCopy
 
+  //hide lostboy background until image loaded
+  const [showStars, setShowStars] = useState(false);
+
   return (
     <Fragment>
       {project.hero && project.hero.type === "image" ? (
@@ -29,8 +32,12 @@ export default function Hero({ project, inside }) {
             width={project.hero.w}
             height={project.hero.h}
             className="heroImage"
+            loading="eager"
+            onLoad={project.href == "lostboy" ? () => setShowStars(true) : null}
           />
-          {project.href === "lostboy" && <StarryBackground />}
+          {project.href === "lostboy" && showStars ? (
+            <StarryBackground />
+          ) : null}
         </div>
       ) : null}
       {project.hero && project.hero.type === "video" ? (
