@@ -43,6 +43,7 @@ export function RenderTitleParts(title, scrollY) {
         width={part.w}
         height={part.h}
         className="icon"
+        loading="eager"
       />
     ) : null
   );

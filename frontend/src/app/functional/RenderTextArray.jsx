@@ -24,6 +24,7 @@ export function RenderTextArray(line) {
           width={32} // Set the appropriate size for your icons
           height={32} // Set the appropriate size for your icons
           className="icon"
+          loading="eager"
         />
       );
     }

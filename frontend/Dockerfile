@@ -1,4 +1,4 @@
-FROM node:19 AS build
+FROM node:21-alpine AS build
 
 # Build the frontend
 ARG version=0.0.1
@@ -14,28 +14,24 @@ RUN npm version --no-git-tag-version ${version} \
   && npm install \
   && npm run build
 
-# FROM nginx:alpine
-# EXPOSE 80
-# COPY --from=build /web/out /serve
-# COPY --from=build /web/nginx.conf /etc/nginx/nginx.conf
-
-FROM node:19-alpine
+FROM node:21-alpine
 WORKDIR /web
 
 ENV NODE_ENV production
 ENV NEXT_TELEMETRY_DISABLED 1
+ENV NEXT_SHARP_PATH=/web/node_modules/sharp
 
 RUN addgroup --system --gid 1001 nodejs
 RUN adduser --system --uid 1001 nextjs
 
-COPY --from=build /web/public ./public
+COPY --from=build /web/public /web/public
 
 # Set the correct permission for prerender cache
 RUN mkdir .next
 RUN chown nextjs:nodejs .next
 
-COPY --from=build --chown=nextjs:nodejs /web/.next/standalone ./
-COPY --from=build --chown=nextjs:nodejs /web/.next/static ./.next/static
+COPY --from=build --chown=nextjs:nodejs /web/.next/standalone /web
+COPY --from=build --chown=nextjs:nodejs /web/.next/static /web/.next/static
 
 USER nextjs
 
@@ -43,4 +39,4 @@ EXPOSE 3000
 ENV PORT 3000
 ENV HOSTNAME "0.0.0.0"
 
-CMD ["node", "server.js"]
+CMD ["server.js"]

@@ -20,7 +20,7 @@
                 },
                 {
                     "type": "text",
-                    "text": "Jakob Prüfer,\n designer and engineer."
+                    "text": "Jakob Prüfer,\n software engineer and designer."
                 },
                 {
                     "type": "text2",
@@ -1024,7 +1024,7 @@
                   },
                   {
                     "type": "headImg",
-                    "src": "/cardioguard/musigk.jpg",
+                    "src": "/cardioguard/musigk.webp",
                     "alt": "Charité Researcher Nicolas Musigk",
                     "w": 817,
                     "h": 460
@@ -1160,7 +1160,7 @@
                   },
                   {
                     "type": "headImg",
-                    "src": "/cardioguard/testing.jpg",
+                    "src": "/cardioguard/testing.webp",
                     "alt": "",
                     "w": 1920,
                     "h": 1080
