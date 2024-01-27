@@ -24,36 +24,40 @@ export default function Hero({ project, inside }) {
 
   return (
     <Fragment>
-      {project.hero && project.hero.type === "image" ? (
-        <div className={`hero ${insideCopy ? "inside" : null}`}>
-          <Image
-            alt={project.hero.alt}
-            src={project.hero.src}
-            width={project.hero.w}
-            height={project.hero.h}
-            className="heroImage"
-            loading="eager"
-            onLoad={project.href == "lostboy" ? () => setShowStars(true) : null}
-          />
-          {project.href === "lostboy" && showStars ? (
-            <StarryBackground />
-          ) : null}
-        </div>
-      ) : null}
-      {project.hero && project.hero.type === "video" ? (
-        <div className={`hero video ${insideCopy ? "inside" : null}`}>
-          <video
-            loop
-            muted={insideCopy ? false : true}
-            playsInline
-            className="heroVideo"
-            src={project.hero.src}
-            controls={insideCopy ? true : false}
-            poster={project.hero.thumbnail}
-            ref={videoRef}
-          ></video>
-        </div>
-      ) : null}
+      <div className={`heroCont ${insideCopy ? "inside" : null}`}>
+        {project.hero && project.hero.type === "image" ? (
+          <div className={`hero ${insideCopy ? "inside" : null}`}>
+            <Image
+              alt={project.hero.alt}
+              src={project.hero.src}
+              width={project.hero.w}
+              height={project.hero.h}
+              className="heroImage"
+              loading="eager"
+              onLoad={
+                project.href == "lostboy" ? () => setShowStars(true) : null
+              }
+            />
+            {project.href === "lostboy" && showStars ? (
+              <StarryBackground />
+            ) : null}
+          </div>
+        ) : null}
+        {project.hero && project.hero.type === "video" ? (
+          <div className={`hero video ${insideCopy ? "inside" : null}`}>
+            <video
+              loop
+              muted={insideCopy ? false : true}
+              playsInline
+              className="heroVideo"
+              src={project.hero.src}
+              controls={insideCopy ? true : false}
+              poster={project.hero.thumbnail}
+              ref={videoRef}
+            ></video>
+          </div>
+        ) : null}
+      </div>
     </Fragment>
   );
 }

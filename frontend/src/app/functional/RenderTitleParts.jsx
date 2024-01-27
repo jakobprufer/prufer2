@@ -5,23 +5,23 @@ export function RenderTitleParts(title, scrollY) {
   return title.map((part, index) =>
     part.type === "text" ? (
       part.text.split("\n").map((line, i) => (
-        <span
+        <div
           key={`${index}-${i}`}
           className="titleText"
           style={{ display: "inline-block" }}
         >
           {line}
-        </span>
+        </div>
       ))
     ) : part.type === "text2" ? (
       part.text.split("\n").map((line, i) => (
-        <span
+        <div
           key={`${index}-${i}`}
           className="titleText"
           style={{ display: "block" }}
         >
           {line}
-        </span>
+        </div>
       ))
     ) : part.type === "link" ? (
       <a href={part.href}>{part.text}</a>
