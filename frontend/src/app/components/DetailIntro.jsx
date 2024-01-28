@@ -39,16 +39,16 @@ export default function DetailIntro({ project }) {
           {project.contributors && (
             <div className="contributors">
               <div className="heading">Contributors</div>
-              {project.contributors.map((item, index) => {
-                return (
-                  <div key={index} className="text">
-                    <div style={{ fontStyle: "normal" }}>{item.name}</div>
-                    {item.role ? (
-                      <div style={{ marginBottom: "16px" }}>{item.role}</div>
-                    ) : null}
-                  </div>
-                );
-              })}
+              <div className="contributorFlex">
+                {project.contributors.map((item, index) => {
+                  return (
+                    <div key={index} className="text">
+                      <div style={{ fontStyle: "normal" }}>{item.name}</div>
+                      {item.role ? <div>{item.role}</div> : null}
+                    </div>
+                  );
+                })}
+              </div>
             </div>
           )}
           {/* {project.tools && (

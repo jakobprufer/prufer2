@@ -20,7 +20,7 @@
                 },
                 {
                     "type": "text",
-                    "text": "Jakob Prüfer,\n software engineer and designer."
+                    "text": "Jakob Prüfer,\n product designer and researcher."
                 },
                 {
                     "type": "text2",
@@ -174,7 +174,7 @@
                     },
                     {
                         "type": "text",
-                        "text": "For the final project of the MA UX Design at the University of the Arts London, Manfredi and I aimed to motivate young people to invest for environmental impact. We found Gen Z is highly concerned about climate change and interested in investing through brokers and cryptocurrencies. Yet sustainable investing lacks tangibility."
+                        "text": "Our research revealed a disconnect for Generation Z between concern about climate change and engagement with sustainable investing. Despite high levels of climate change concern and openness to innovative investment platforms, sustainable investing options often seem intangible and not credible to this cohort. For the final master's project at the University of the Arts London, Manfredi and I challenged ourselves to engage young investors to leverage their financial decisions for positive environmental impact."
                     }
                 ],
                 [
@@ -184,7 +184,7 @@
                     },
                     {
                         "type": "text",
-                        "text": "Our designed mobile application features an augmented reality Arctic ice sheet that dynamically represents the amount of ice saved through reduced CO2 emissions. It includes a preferences-based green fund portfolio and emphasises community impact context."
+                        "text": "The Glace prototype features an augmented reality Arctic ice sheet that dynamically represents the amount of ice saved through reducing CO2 emissions. The reduction is achieved by investing in green funds and compared to the benchmark of a conventional MSCI ACWI Portfolio. Emission amounts are sourced from AI-driven data provider Clarity AI. The app includes a beginner-friendly, preference-based portfolio and emphasises personal impact in the wider community context."
                     }
                 ]
             ],
