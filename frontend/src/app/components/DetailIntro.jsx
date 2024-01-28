@@ -18,7 +18,7 @@ export default function DetailIntro({ project }) {
             ))}
           {project.externalAction && project.externalAction[0] && (
             <a
-              className={`container l0 button iconSlide rightup ${project.colour}`}
+              className={`container l0 button iconSlide rightup desktopAction ${project.colour}`}
               href={project.externalAction[0].href}
             >
               <div className="buttonText">{project.externalAction[0].text}</div>
@@ -69,6 +69,18 @@ export default function DetailIntro({ project }) {
               <div className="heading">Status</div>
               <div className="text">{project.status}</div>
             </div>
+          )}
+          {project.externalAction && project.externalAction[0] && (
+            <a
+              className={`container l0 button iconSlide rightup mobileAction ${project.colour}`}
+              href={project.externalAction[0].href}
+            >
+              <div className="buttonText">{project.externalAction[0].text}</div>
+              <div className="buttonIcon">
+                <RiArrowRightUpLine className="before" />
+                <RiArrowRightUpLine className="main" />
+              </div>
+            </a>
           )}
         </div>
       </div>

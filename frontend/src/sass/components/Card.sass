@@ -20,7 +20,7 @@
     position: relative
     z-index: 3
 
-    @media (max-width: $breakMobile)
+    @media (max-width: $breakBig)
         justify-content: flex-start
         padding: 100px 8vw 0 8vw
         gap: 16px
@@ -114,8 +114,9 @@
         margin-left: 64px
 
         @media (max-width: $breakMobile)
-            font-size: 32pt
+            font-size: 24pt
             margin-left: 0px
+            margin-top: 32px
 
     .subtitles
         gap: 16px
@@ -175,6 +176,11 @@
 
         @media (max-width: $breakMobile)
             justify-content: center
+
+    .title
+        @media (max-width: $breakMobile)
+            font-size: 24pt
+            margin-bottom: 0
 
     // .title
     //     font-size: 7vw

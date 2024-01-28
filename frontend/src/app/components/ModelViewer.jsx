@@ -52,7 +52,7 @@ const ModelViewer = () => {
         camera-controls
         id="model"
         style={{
-          width: "800px",
+          width: "900px",
           height: "100%",
           // transform: "translateY(-5vh)",
           background: "00000000",

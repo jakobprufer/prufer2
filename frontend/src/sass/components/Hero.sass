@@ -29,8 +29,13 @@
         width: 70vw
         height: auto
         right: -8vw
-        // transform: translateY(2vh)
         top: 10vh
+
+        @media (max-width: 1200px)
+            top: 50vh
+
+        @media (max-width: $breakBig)
+            top: 50vh
 
         @media (max-width: $breakMobile)
             width: 120vw
@@ -38,11 +43,11 @@
             top: 50vh
 
         &.inside
-            width: 50vw
-            right: 25vw
-            top: 102px
+            width: min($detailContent, 60vw)
+            right: max(20vw, calc((100vw - $detailContent) / 2))
+            top: 72px
 
-            @media (max-width: $breakMobile)
+            @media (max-width: $breakBig)
                 width: 86vw
                 right: 7vw
                 top: 96px
@@ -57,20 +62,26 @@
         @media (min-aspect-ratio: 16/9) //for wider desktop screens (16/9 monitors)
             top: 10vh
 
+        @media (max-width: 1200px)
+            top: 30vh
+
+        @media (max-width: $breakBig)
+            top: 50vh
+
         @media (max-width: $breakMobile)
             width: 130vw
             right: -40vw
             top: 45vh
 
         &.inside
-            right: 25vw
-            width: 50vw
-            top: 128px
+            width: min($detailContent, 60vw)
+            right: max(20vw, calc((100vw - $detailContent) / 2))
+            top: 102px
 
-            @media (max-width: $breakMobile)
+            @media (max-width: $breakBig)
                 width: 86vw
                 right: 7vw
-                top: 110px
+                top: 96px
 
 .cardioguard
     .hero
@@ -78,40 +89,47 @@
         right: -20vw
         top: 10vh
 
+        @media (max-width: 1200px)
+            top: 30vh
+
+        @media (max-width: $breakBig)
+            top: 50vh
+
         @media (max-width: $breakMobile)
             width: 140vw
             right: -50vw
             top: 46vh
 
         &.inside
-            right: 25vw
-            width: 50vw
-            top: 128px
+            width: min($detailContent, 60vw)
+            right: max(20vw, calc((100vw - $detailContent) / 2))
+            top: 102px
 
-            @media (max-width: $breakMobile)
-                width: 94vw
-                right: 2vw
+            @media (max-width: $breakBig)
+                width: 86vw
+                right: 7vw
                 top: 96px
 
 .birdsong
     .hero
-        width: 100vw
+        width: calc( 100vh / 9 * 16 )
         top: 0vw
-        left: 0vw
+        right: 0vw
+
+        @media (max-width: $breakBig)
+            right: -50vw
 
         @media (max-width: $breakMobile)
-            height: 100vh
-            width: 400vw
-            left: -150vw
+            width: calc( 100vh / 9 * 20 )
+            right: -140vw
+            top: 0vw
 
         &.inside
-            width: 60vw
-            top: 160px
-            left: 20vw
-            border-radius: 24px
-            overflow: hidden
+            width: min($detailContent, 60vw)
+            right: max(20vw, calc((100vw - $detailContent) / 2))
+            top: 140px
 
-            @media (max-width: $breakMobile)
-                width: 88vw
-                left: 6vw
-                top: 110px
+            @media (max-width: $breakBig)
+                width: 86vw
+                right: 7vw
+                top: 96px

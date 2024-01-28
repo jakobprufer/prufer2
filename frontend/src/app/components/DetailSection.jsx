@@ -1,10 +1,22 @@
 "use client";
-import React, { Fragment, useState } from "react";
+import React, { Fragment, useState, useEffect } from "react";
 import ReactMarkdown from "react-markdown";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import { UseWindowSize } from "../functional/UseWindowSize.jsx";
 
 const DetailSection = ({ sections }) => {
+  //check if mobile
+  const windowSize = UseWindowSize();
+  console.log(windowSize.width);
+  const [smallScreen, setSmallScreen] = useState(false);
+
+  useEffect(() => {
+    setSmallScreen(windowSize.width < 600);
+  }, [windowSize]);
+
+  console.log(smallScreen);
+
   // Initialize state for open/close status of sections
   const [openSections, setOpenSections] = useState({});
 
@@ -33,14 +45,17 @@ const DetailSection = ({ sections }) => {
           <motion.div
             layout="preserve-aspect"
             className="headImg"
-            style={{ borderRadius: "16px", overflow: "hidden" }}
+            style={{
+              borderRadius: smallScreen ? "8px" : "16px",
+              overflow: "hidden",
+            }}
           >
             <Image
               src={headImg.src}
               alt={headImg.alt}
               width={1920}
               height={1080}
-              className="blogImg"
+              className="sectionImg"
             />
           </motion.div>
         )}
@@ -55,7 +70,7 @@ const DetailSection = ({ sections }) => {
           return <ReactMarkdown key={index}>{item.text}</ReactMarkdown>;
         case "ol":
           return (
-            <ol>
+            <ol className="sectionText">
               {item.items.map((li, index) => (
                 <li key={index}>
                   <ReactMarkdown>{li}</ReactMarkdown>
@@ -65,7 +80,7 @@ const DetailSection = ({ sections }) => {
           );
         case "ul":
           return (
-            <ul>
+            <ul className="sectionText">
               {item.items.map((li, index) => (
                 <li key={index}>
                   <ReactMarkdown>{li}</ReactMarkdown>
@@ -78,16 +93,16 @@ const DetailSection = ({ sections }) => {
             <Image
               src={item.src}
               alt={item.alt}
-              className="blogImg"
+              className="sectionImg contentImg"
               width={item.w}
               height={item.h}
             />
           );
         case "video":
           return (
-            <div className="blogVideoContCont">
-              <div className="blogVideoCont">
-                <video className="blogVideo" controls>
+            <div className="sectionVideoContCont">
+              <div className="sectionVideoCont">
+                <video className="sectionVideo" controls>
                   <source src={item.src} type="video/mp4"></source>
                 </video>
               </div>
@@ -108,7 +123,11 @@ const DetailSection = ({ sections }) => {
   };
 
   return (
-    <motion.section className="section" layout style={{ borderRadius: "24px" }}>
+    <motion.section
+      className="section"
+      layout
+      style={{ borderRadius: smallScreen ? "16px" : "24px" }}
+    >
       {sections.map((section, index) => (
         <Fragment key={index}>
           <motion.div
