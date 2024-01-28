@@ -63,6 +63,9 @@
         aspect-ratio: 3/2
         position: relative
 
+        @media (max-width: $breakMobile)
+            aspect-ratio: 1/1
+
         .logo1, .logo2
             position: absolute
             width: 20%
@@ -87,3 +90,6 @@
             &.stacked
                 left: 20.7%
                 top: 29%
+
+                @media (max-width: $breakMobile)
+                    top: 20%

@@ -8,14 +8,11 @@ import { UseWindowSize } from "../functional/UseWindowSize.jsx";
 const DetailSection = ({ sections }) => {
   //check if mobile
   const windowSize = UseWindowSize();
-  console.log(windowSize.width);
   const [smallScreen, setSmallScreen] = useState(false);
 
   useEffect(() => {
     setSmallScreen(windowSize.width < 600);
   }, [windowSize]);
-
-  console.log(smallScreen);
 
   // Initialize state for open/close status of sections
   const [openSections, setOpenSections] = useState({});

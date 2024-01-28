@@ -6,7 +6,7 @@ export default function DetailFeature({ featureId }) {
   const [stacked, setStacked] = useState(true);
 
   return (
-    <div className="detailFeature">
+    <div className={"detailFeature"}>
       {featureId === "glacemodel" && <ModelViewer />}
       {featureId === "lostboylogo" && (
         <Fragment>

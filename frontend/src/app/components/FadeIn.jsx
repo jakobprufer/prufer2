@@ -7,8 +7,6 @@ export default function FadeIn({ children }) {
   //using nav store
   //   const fadeOut = useNavStore((state) => state.fadeOut);
 
-  //   console.log(fadeOut);
-
   return (
     // <AnimatePresence>
     <motion.div
