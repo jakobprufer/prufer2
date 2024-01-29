@@ -140,8 +140,8 @@ export default function TitleBar() {
                   className={`titleBarExp`}
                 >
                   {/* <motion.h3 className="mbs mts">About Me</motion.h3> */}
-                  <motion.p className="titleBarP mbxs">
-                    Hello, I&apos;m Jakob, a UX designer and web developer.
+                  {/* <motion.p className="titleBarP mbxs">
+                    Hello, I&apos;m Jakob, product designer and researcher.
                     Coming from a background in psychology, I believe
                     today&apos;s challenges are best approached with an
                     integrated understanding of both technology and human
@@ -150,7 +150,35 @@ export default function TitleBar() {
                   <motion.p className="titleBarP mbs">
                     Originally from Berlin, I am currently based in London. This
                     portfolio showcases some of my recent work.
-                  </motion.p>
+                  </motion.p> */}
+                  <p>
+                    <b>cv:</b>
+                  </p>
+                  <p className="mbxs">
+                    2022-2023 <br />
+                    MA User Experience Design <br />
+                    University of the Arts London
+                  </p>
+                  <p className="mbs">
+                    2019-2022 <br />
+                    BSc Psychological and Behavioural Science <br />
+                    London School of Economics
+                  </p>
+                  <p>
+                    <b>recently worked with:</b>
+                  </p>
+                  <p className="mbs linksVisible">
+                    <a href="https://lostboy.tv">Lost Boy</a> for Adidas,
+                    Bulgari, Morrisons, Clipper (music composition);{" "}
+                    <a href="https://avepro.net">AVE</a> for Coca Cola European
+                    Partners and <a href="https://betamobil.de">Betamobil</a>{" "}
+                    for Gran Turismo (streaming services),{" "}
+                    <a href="https://cowryconsulting.com">Cowry Consulting</a>{" "}
+                    (campaign strategy),{" "}
+                    <a href="https://pulseradio.uk">Pulse Radio</a> (brand/web
+                    design)
+                  </p>
+                  <p></p>
                   <motion.p
                     className={`titleBarP titleBarTag mbxs ${background}`}
                   >
@@ -163,13 +191,13 @@ export default function TitleBar() {
                   >
                     jakob@prufer.co
                   </motion.a>
-                  <Image
+                  {/* <Image
                     alt="Jakob Prufer standing in front of a white wall glancing to the right"
                     src="/jakob3.jpg"
                     width={1200}
                     height={1200}
                     className="barImage"
-                  />
+                  /> */}
                 </motion.div>
               ) : null}
             </motion.div>

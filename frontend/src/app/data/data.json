@@ -935,7 +935,7 @@
                     },
                     {
                         "type": "text",
-                        "text": "Health tracking can be stress-inducing and overwhelming. We designed a monitoring app for heart health and early signs of myocarditis that feels friendly, science-backed and is accessible for elderly users."
+                        "text": "Health tracking can be stress-inducing and overwhelming. We designed a monitoring app for heart health and early signs of heart failure that feels friendly, science-backed and is accessible for elderly users."
                     }
                 ],
                 [
@@ -1002,7 +1002,7 @@
                     },
                     {
                         "type": "text",
-                        "text": "We designed a monitoring app for heart health and early signs of myocarditis that feels friendly, science-backed and is accessible for elderly users."
+                        "text": "We designed a monitoring app for heart health and early signs of heart failure that feels friendly, science-backed and is accessible for elderly users."
                     }
                 ]
             ],
@@ -1024,7 +1024,7 @@
                   },
                   {
                     "type": "headImg",
-                    "src": "/cardioguard/musigk.webp",
+                    "src": "/cardioguard/musigk.jpg",
                     "alt": "Charité Researcher Nicolas Musigk",
                     "w": 817,
                     "h": 460
@@ -1037,7 +1037,7 @@
                   },
                   {
                     "type": "text",
-                    "text": "We begun research with a semi-structured interview with a cardiology researcher at Charité in Berlin, who’s PhD thesis looks at early detection of cardiovascular disease. I got a good overview over what patient data and symptoms would be helpful to collect and determined some pain points for doctors and patients in the diagnostic progress."
+                    "text": "We begun research with a semi-structured interview with a cardiology researcher at Charité in Berlin, who’s MD thesis looks at early detection of cardiovascular disease. I got a good overview over what patient data and symptoms would be helpful to collect and determined some pain points for doctors and patients in the diagnostic progress."
                   },
                   {
                     "type": "text",
@@ -1169,7 +1169,7 @@
                 "content": [
                   {
                     "type": "text",
-                    "text": "We tested our Figma prototype with eight users of ages between 54 and 86auth. This phase for me served as a reminder about how important it is to challenge own assumptions – what might be true and obvious for you might not be the case for every user."
+                    "text": "We tested our Figma prototype with eight users of ages between 54 and 86. This phase for me served as a reminder about how important it is to challenge own assumptions – what might be true and obvious for you might not be the case for every user."
                   },
                   {
                     "type": "image",
