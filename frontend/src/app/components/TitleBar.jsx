@@ -140,7 +140,7 @@ export default function TitleBar() {
                   className={`titleBarExp`}
                 >
                   {/* <motion.h3 className="mbs mts">About Me</motion.h3> */}
-                  {/* <motion.p className="titleBarP mbxs">
+                  <motion.p className="titleBarP mbxs">
                     Hello, I&apos;m Jakob, product designer and researcher.
                     Coming from a background in psychology, I believe
                     today&apos;s challenges are best approached with an
@@ -150,7 +150,18 @@ export default function TitleBar() {
                   <motion.p className="titleBarP mbs">
                     Originally from Berlin, I am currently based in London. This
                     portfolio showcases some of my recent work.
+                  </motion.p>
+                  {/* <motion.p
+                    className={`titleBarP titleBarTag mbxs ${background}`}
+                  >
+                    Get in touch:
                   </motion.p> */}
+                  {/* <p>
+                    <a href="mailto:jakob@prufer.co">jakob@prufer.co</a>
+                  </p>
+                  <p className="mbs">
+                    <a href="tel:00447365665563">+44 7365 665563</a>
+                  </p>
                   <p>
                     <b>cv:</b>
                   </p>
@@ -173,12 +184,14 @@ export default function TitleBar() {
                     <a href="https://avepro.net">AVE</a> for Coca Cola European
                     Partners and <a href="https://betamobil.de">Betamobil</a>{" "}
                     for Gran Turismo (streaming services),{" "}
-                    <a href="https://cowryconsulting.com">Cowry Consulting</a>{" "}
+                    <a href="https://www.cowryconsulting.com/">
+                      Cowry Consulting
+                    </a>{" "}
                     (campaign strategy),{" "}
                     <a href="https://pulseradio.uk">Pulse Radio</a> (brand/web
                     design)
-                  </p>
-                  <p></p>
+                  </p> */}
+
                   <motion.p
                     className={`titleBarP titleBarTag mbxs ${background}`}
                   >
@@ -191,13 +204,13 @@ export default function TitleBar() {
                   >
                     jakob@prufer.co
                   </motion.a>
-                  {/* <Image
+                  <Image
                     alt="Jakob Prufer standing in front of a white wall glancing to the right"
                     src="/jakob3.jpg"
                     width={1200}
                     height={1200}
                     className="barImage"
-                  /> */}
+                  />
                 </motion.div>
               ) : null}
             </motion.div>
