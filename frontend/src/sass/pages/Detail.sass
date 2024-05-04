@@ -35,6 +35,18 @@
         gap: 32px
 
 .detailContent
+    .title
+        padding-bottom: 0
+
+    .myRole
+        font-size: 24px
+
+        &.light
+            color: $light-font-off
+
+        &.dark
+            color: $dark-font-off
+
     .introGrid
         display: grid
         grid-template-columns: minmax(500px, 5fr) minmax(352px, 3fr)
@@ -69,6 +81,11 @@
 
     h2
         padding-top: 32px
+
+.detailTimeline
+    width: 100%
+    height: fit-content
+    border-radius: 24px
 
 .detailProcess
     display: flex

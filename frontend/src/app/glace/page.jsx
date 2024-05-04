@@ -9,6 +9,7 @@ import Hero from "../components/Hero";
 import DetailIntro from "../components/DetailIntro";
 import DetailSection from "../components/DetailSection";
 import DetailFeature from "../components/DetailFeature";
+import DetailTimeline from "../components/DetailTimeline";
 
 export default function Glace() {
   //select project
@@ -58,6 +59,8 @@ export default function Glace() {
                   return (
                     <DetailFeature featureId={section.featureId} key={index} />
                   );
+                } else if (section.type === "timeline") {
+                  return <DetailTimeline file={section.file} key={index} />;
                 } else {
                   return null;
                 }

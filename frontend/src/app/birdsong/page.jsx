@@ -7,6 +7,7 @@ import data from "../data/data.json";
 import FadeIn from "../components/FadeIn";
 import Hero from "../components/Hero";
 import DetailIntro from "../components/DetailIntro";
+import DetailTimeline from "../components/DetailTimeline";
 import DetailSection from "../components/DetailSection";
 
 export default function Birdsong() {
@@ -51,6 +52,8 @@ export default function Birdsong() {
                   return <DetailSection key={index} sections={[section]} />;
                 } else if (section.type === "h2") {
                   return <h2 key={index}>{section.text}</h2>;
+                } else if (section.type === "timeline") {
+                  return <DetailTimeline file={section.file} key={index} />;
                 } else {
                   return null;
                 }

@@ -7,7 +7,8 @@ import { RenderTitleParts } from "../functional/RenderTitleParts.jsx";
 export default function DetailIntro({ project }) {
   return (
     <div className="detailIntro">
-      <h1 className="title">{RenderTitleParts(project.title, 0)}</h1>
+      <h1 className="title mbs">{RenderTitleParts(project.brand, 0)}</h1>
+      <div className={`mbl myRole ${project.colour}`}>{project.myRole}</div>
       <div className="introGrid">
         <div className="column">
           {project.detail &&

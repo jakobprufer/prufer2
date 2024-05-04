@@ -25,9 +25,6 @@ export default function Card({ project }) {
     <div
       className={`card ${project.href} ${inside && "inside"}}`}
       id={`${project.href}Card`}
-      // {...(inside && {
-      //   style: { transform: `translateY(-${lastInside * 100}vh)` },
-      // })}
     >
       <Hero project={project} scrollY={scrollY} />
       {!inside ? (
@@ -35,52 +32,68 @@ export default function Card({ project }) {
       ) : null}
       {!inside ? (
         <motion.div className={`cardContent ${project.colour}`}>
-          {project.title && (
+          {project.type === "project" && (
+            <>
+              <FadeIn className="project">
+                <div className="cardCaption">
+                  {project.brand && (
+                    <div className={`preTitle ${project.colour}`}>
+                      {RenderTitleParts(project.brand, scrollY)}
+                    </div>
+                  )}
+                  <div className="title">
+                    {RenderTitleParts(project.title, scrollY)}
+                  </div>
+                  <div className={`subtitles ${project.colour}`}>
+                    {project.myRole && (
+                      <div className="subtitleLine noMobile">
+                        <p className="text">{project.myRole}</p>
+                      </div>
+                    )}
+                  </div>
+                </div>
+              </FadeIn>
+              <div className="cardActions">
+                {project.action && (
+                  <FadeIn>
+                    <Link
+                      className={`container l2 button iconSlide right ${project.colour}`}
+                      href={project.href}
+                      // onClick={() => handleRouteChange({ href: project.href })}
+                    >
+                      <div className="hoverShadow"></div>
+                      <div className="buttonText">{project.action}</div>
+                      <div className="buttonIcon">
+                        <RiArrowRightLine className="before" />
+                        <RiArrowRightLine className="main" />
+                      </div>
+                    </Link>
+                  </FadeIn>
+                )}
+              </div>
+            </>
+          )}
+          {project.type === "info" && (
             <FadeIn>
-              {project.preTitle && (
-                <div className="preTitle">{project.preTitle}</div>
-              )}
-              <div className="title">
-                {RenderTitleParts(project.title, scrollY)}
+              <div className="info">
+                {project.preTitle && (
+                  <div className={`preTitle ${project.colour}`}>
+                    {RenderTitleParts(project.preTitle, scrollY)}
+                  </div>
+                )}
+                <div className="title">
+                  {RenderTitleParts(project.title, scrollY)}
+                </div>
+                {/* <div className={`subtitles ${project.colour}`}>
+                {project.myRole && (
+                  <div className="subtitleLine noMobile">
+                    <p className="text">{project.myRole}</p>
+                  </div>
+                )}
+              </div> */}
               </div>
             </FadeIn>
           )}
-          <FadeIn>
-            <div className="subtitles">
-              {project.teaserShort &&
-                project.teaserShort.map((item, index) => {
-                  return (
-                    <div key={index} className="subtitleLine">
-                      {RenderTextArray(item)}
-                    </div>
-                  );
-                })}
-              {project.myRole && (
-                <div className="subtitleLine noMobile">
-                  <div className="heading">My Role</div>
-                  <p className="text">{project.myRole}</p>
-                </div>
-              )}
-            </div>
-          </FadeIn>
-          <div className="cardActions">
-            {project.action && (
-              <FadeIn>
-                <Link
-                  className={`container l2 button iconSlide right ${project.colour}`}
-                  href={project.href}
-                  // onClick={() => handleRouteChange({ href: project.href })}
-                >
-                  <div className="hoverShadow"></div>
-                  <div className="buttonText">{project.action}</div>
-                  <div className="buttonIcon">
-                    <RiArrowRightLine className="before" />
-                    <RiArrowRightLine className="main" />
-                  </div>
-                </Link>
-              </FadeIn>
-            )}
-          </div>
         </motion.div>
       ) : null}
       {/* {project.model && <ModelViewer scrollY={scrollY} />} */}

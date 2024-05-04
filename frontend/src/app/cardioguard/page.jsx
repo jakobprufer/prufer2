@@ -8,6 +8,7 @@ import FadeIn from "../components/FadeIn";
 import Hero from "../components/Hero";
 import DetailIntro from "../components/DetailIntro";
 import DetailSection from "../components/DetailSection";
+import DetailTimeline from "../components/DetailTimeline";
 
 export default function CardioGuard() {
   //select project
@@ -51,6 +52,8 @@ export default function CardioGuard() {
                   return <DetailSection key={index} sections={[section]} />;
                 } else if (section.type === "h2") {
                   return <h2 key={index}>{section.text}</h2>;
+                } else if (section.type === "timeline") {
+                  return <DetailTimeline file={section.file} key={index} />;
                 } else {
                   return null;
                 }

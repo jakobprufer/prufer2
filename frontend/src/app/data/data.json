@@ -99,28 +99,30 @@
             "colour": "light",
             "name": "Glace",
             "href": "glace",
+            "brand": [
+              {
+                "type": "icon",
+                "src": "glace.svg",
+                "alt": "Lost Boy Icon",
+                "h": 200,
+                "w": 200
+            },
+              {
+                "type": "text",
+                "text": "Glace"
+              }
+            ],
             "title": [
-                {
-                    "type": "icon",
-                    "src": "/glace.svg",
-                    "alt": "Glace Icon",
-                    "h": 200,
-                    "w": 200
-                },
-                {
-                    "type": "text",
-                    "text": "Glace"
-                }
+              {
+                "type": "text",
+                "text": "Making sustainable investing palpable with arctic ice impact visualisation"
+              }
             ],
             "timeFrame": "August - November 2023",
             "myRole": "Data Research, UX Design, Web Development",
             "contributors": [
                 {
-                    "name": "Jakob Prüfer",
-                    "role": "Data Research, UX Design, Web Development"
-                },
-                {
-                    "name": "Manfredi Montaretto Marullo",
+                    "name": "Manfredi Montaretto Marullo:",
                     "role": "UI Design, 3D, Usability Testing"
                 }
             ],
@@ -193,6 +195,14 @@
                     "type": "feature",
                     "featureId": "glacemodel"
                 },
+                {
+                  "type": "h2",
+                  "text": "Timeline"
+              },
+              {
+                "type": "timeline",
+                "file": "/glace/TimelineGlace.svg"
+              },
                 {
                     "type": "h2",
                     "text": "Process"
@@ -683,7 +693,7 @@
             "colour": "dark",
             "name": "lostboy.tv",
             "href": "lostboy",
-            "title": [
+            "brand": [
                 {
                     "type": "icon",
                     "src": "/lostboy-brighter.jpg",
@@ -696,15 +706,17 @@
                     "text": "lostboy.tv"
                 }
             ],
+            "title": [
+              {
+                "type": "text",
+                "text": "Increasing client acquisition by optimising agency website with heap map analysis"
+              }
+            ],
             "timeFrame": "Januar - September 2023",
             "myRole": "Conception, Branding, Web Development",
             "contributors": [
                 {
-                    "name": "Jakob Prüfer",
-                    "role": "Conception, Branding, Web Development"
-                },
-                {
-                    "name": "Luca Antoniazzi",
+                    "name": "Luca Antoniazzi:",
                     "role": "Creative Direction"
                 }
             ],
@@ -773,6 +785,14 @@
                 {
                   "type": "feature",
                   "featureId": "lostboylogo"
+                },
+                {
+                  "type": "h2",
+                  "text": "Timeline"
+                },
+                {
+                "type": "timeline",
+                "file": "/lostboy/TimelineLostBoy.svg"
                 },
                 {
                     "type": "h2",
@@ -914,7 +934,7 @@
             "colour": "light",
             "name": "CardioGuard",
             "href": "cardioguard",
-            "title": [
+            "brand": [
                 {
                     "type": "icon",
                     "src": "/cardioguard.gif",
@@ -926,6 +946,12 @@
                     "type": "text",
                     "text": "CardioGuard"
                 }
+            ],
+            "title": [
+              {
+                "type": "text",
+                "text": "Improving task completion rate in heart health app through guided testing with elderly users"
+              }
             ],
             "subtitles": [
                 [
@@ -954,9 +980,6 @@
             "contributors": [
                 {
                     "name": "Manfredi Montaretto Marullo"
-                },
-                {
-                    "name": "Jakob Prüfer"
                 }
             ],
             "status": "Prototype",
@@ -1007,6 +1030,14 @@
                 ]
             ],
             "content": [
+              {
+                "type": "h2",
+                "text": "Timeline"
+              },
+              {
+                "type": "timeline",
+                "file": "/cardioguard/TimelineCardioGuard.svg"
+              },
               {
                 "type": "h2",
                 "text": "Process"
@@ -1241,11 +1272,17 @@
             "colour": "dark",
             "name": "Birdsong",
             "href": "birdsong",
-            "title": [
+            "brand": [
                 {
                     "type": "text",
                     "text": "Urban Birdsong"
                 }
+            ],
+            "title": [
+              {
+                "type": "text",
+                "text": "Highlighting the impact of urban light pollution on birdsong in interactive sound installation"
+              }
             ],
             "timeFrame": "10-24/11/2022",
             "myRole": "Perceptional Research, Interactive Technology",
@@ -1261,9 +1298,6 @@
                 },
                 {
                     "name": "Roshni Suri"
-                },
-                {
-                    "name": "Jakob Prüfer"
                 }
             ],
             "tools": [
@@ -1322,6 +1356,14 @@
                 ]
             ],
             "content": [
+                {
+                  "type": "h2",
+                  "text": "Timeline"
+                },
+                {
+                  "type": "timeline",
+                  "file": "/birdsong/TimelineBirdsong.svg"
+                },
                 {
                     "type": "h2",
                     "text": "Process"
@@ -1471,7 +1513,12 @@
             "colour": "light",
             "name": "Outro",
             "href": "outro",
-            "preTitle": "Get in touch:",
+            "preTitle": [
+              {
+                "type": "text",
+                "text": "Get in touch:"
+              }
+            ],
             "title": [
                 {
                     "type": "link",
