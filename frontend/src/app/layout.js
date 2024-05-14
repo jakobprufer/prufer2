@@ -4,7 +4,10 @@ import HomeLayer from "./components/HomeLayer";
 import TitleBar from "./components/TitleBar";
 import { Manrope } from 'next/font/google'
 
-const manrope = Manrope({ subsets: ['latin'] })
+const manrope = Manrope({
+  subsets: ['latin'],
+  display: 'swap',
+})
 
 
 export const metadata = {

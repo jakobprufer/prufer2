@@ -49,7 +49,13 @@ export default function CardioGuard() {
             {project.content &&
               project.content.map((section, index) => {
                 if (section.type === "expandable") {
-                  return <DetailSection key={index} sections={[section]} />;
+                  return (
+                    <DetailSection
+                      key={index}
+                      sections={[section]}
+                      colour={project.colour}
+                    />
+                  );
                 } else if (section.type === "h2") {
                   return <h2 key={index}>{section.text}</h2>;
                 } else if (section.type === "timeline") {

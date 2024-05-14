@@ -205,7 +205,7 @@
               },
                 {
                     "type": "h2",
-                    "text": "Process"
+                    "text": "Documentation"
                 },
                 {
                     "type": "expandable",
@@ -216,7 +216,7 @@
                       },
                       {
                         "type": "headHeading",
-                        "text": "Understanding the financial landscape and Gen Z's perception of sustainable investing"
+                        "text": "Exploring the financial landscape and understanding Generation Z's perception"
                       },
                       {
                         "type": "headImg",
@@ -388,7 +388,7 @@
                       },
                       {
                         "type": "headHeading",
-                        "text": "Exploring data visualisation and automated portfolio creation"
+                        "text": "Investigating different forms of data visualisation and automated portfolio creation"
                       },
                       {
                         "type": "headImg",
@@ -465,7 +465,7 @@
                       },
                       {
                         "type": "headHeading",
-                        "text": "Building and testing a platform prototype and AR visualisation"
+                        "text": "Building and testing the prototype and the augmented ice visualisation"
                       },
                       {
                         "type": "headImg",
@@ -778,7 +778,7 @@
                 },
                 {
                     "type": "h2",
-                    "text": "Process"
+                    "text": "Documentation"
                 },
                 {
                     "type": "expandable",
@@ -831,7 +831,7 @@
                       },
                       {
                         "type": "headHeading",
-                        "text": "Iterating through prototypes with client input"
+                        "text": "Prototyping and design iterations"
                       },
                       {
                         "type": "headImg",
@@ -1022,18 +1022,18 @@
               },
               {
                 "type": "h2",
-                "text": "Process"
+                "text": "Documentation"
               },
               {
                 "type": "expandable",
                 "head": [
                   {
                     "type": "phase",
-                    "text": "Phase 1"
+                    "text": "Research"
                   },
                   {
                     "type": "headHeading",
-                    "text": "Research"
+                    "text": "Finding patient and doctor paint points"
                   },
                   {
                     "type": "headImg",
@@ -1078,11 +1078,11 @@
                 "head": [
                   {
                     "type": "phase",
-                    "text": "Phase 2"
+                    "text": "Definition"
                   },
                   {
                     "type": "headHeading",
-                    "text": "Definition"
+                    "text": "Defining user needs and app goals"
                   },
                   {
                     "type": "headImg",
@@ -1121,15 +1121,15 @@
                 "head": [
                   {
                     "type": "phase",
-                    "text": "Phase 3"
+                    "text": "Prototyping & Testing"
                   },
                   {
                     "type": "headHeading",
-                    "text": "Ideation"
+                    "text": "Finding false design assumptions through testing with elderly users"
                   },
                   {
                     "type": "headImg",
-                    "src": "/cardioguard/ideation3.jpg",
+                    "src": "/cardioguard/testing.webp",
                     "alt": "",
                     "w": 1920,
                     "h": 1080
@@ -1155,31 +1155,16 @@
                     "h": 1080
                   },
                   {
-                    "type": "text",
-                    "text": "We decided we would not use the colour red or alarming language; the main status would only be regular or irregular. For a patient with known issues, the status would still remain regular as long as no changes in condition were detected. We also added an animated doctor mannequin to make the app friendly and provide a character to the name “CardioGuard”."
-                  }
-                ]
-              },
-              {
-                "type": "expandable",
-                "head": [
-                  {
-                    "type": "phase",
-                    "text": "Phase 4"
-                  },
-                  {
-                    "type": "headHeading",
-                    "text": "User Testing"
-                  },
-                  {
-                    "type": "headImg",
-                    "src": "/cardioguard/testing.webp",
+                    "type": "image",
+                    "src": "/cardioguard/ideation3.jpg",
                     "alt": "",
                     "w": 1920,
                     "h": 1080
-                  }
-                ],
-                "content": [
+                  },
+                  {
+                    "type": "text",
+                    "text": "We decided we would not use the colour red or alarming language; the main status would only be regular or irregular. For a patient with known issues, the status would still remain regular as long as no changes in condition were detected. We also added an animated doctor mannequin to make the app friendly and provide a character to the name “CardioGuard”."
+                  },
                   {
                     "type": "text",
                     "text": "We tested our Figma prototype with eight users of ages between 54 and 86. This phase for me served as a reminder about how important it is to challenge own assumptions – what might be true and obvious for you might not be the case for every user."
@@ -1202,11 +1187,11 @@
                 "head": [
                   {
                     "type": "phase",
-                    "text": "Phase 5"
+                    "text": "Delivery"
                   },
                   {
                     "type": "headHeading",
-                    "text": "Final Prototype"
+                    "text": "Final Figma Prototype"
                   },
                   {
                     "type": "headImg",
@@ -1348,18 +1333,18 @@
                 },
                 {
                     "type": "h2",
-                    "text": "Process"
+                    "text": "Documentation"
                 },
                 {
                     "type": "expandable",
                     "head": [
                       {
                         "type": "phase",
-                        "text": "Phase 1"
+                        "text": "Research"
                       },
                     {
                             "type": "headHeading",
-                            "text": "Soundwalks"
+                            "text": "Exploring the urban soundscape"
                         },
                       {
                         "type": "headImg",
@@ -1396,11 +1381,11 @@
                     "head": [
                       {
                         "type": "phase",
-                        "text": "Phase 2"
+                        "text": "Ideation"
                       },
                       {
                         "type": "headHeading",
-                        "text": "Physical Mapping"
+                        "text": "Mapping sounds and creating physical representations"
                       },
                       {
                         "type": "headImg",
@@ -1429,11 +1414,11 @@
                     "head": [
                       {
                         "type": "phase",
-                        "text": "Phase 3"
+                        "text": "Implementation"
                       },
                       {
                         "type": "headHeading",
-                        "text": "Birdnest Installation"
+                        "text": "Programming the light sensor, creating the reactive sound sphere and building the nest"
                       },
                       {
                         "type": "headImg",

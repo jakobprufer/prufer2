@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import { UseWindowSize } from "../functional/UseWindowSize.jsx";
 
-const DetailSection = ({ sections }) => {
+const DetailSection = ({ sections, colour }) => {
   //check if mobile
   const windowSize = UseWindowSize();
   const [smallScreen, setSmallScreen] = useState(false);
@@ -35,7 +35,7 @@ const DetailSection = ({ sections }) => {
     return (
       <>
         <motion.div className="headTitle" layout="position">
-          {phase && <div className="heading phase">{phase}</div>}
+          {phase && <div className={`heading phase ${colour}`}>{phase}</div>}
           {headHeading && <h3 className="headHeading">{headHeading}</h3>}
         </motion.div>
         {headImg && (
