@@ -212,11 +212,11 @@
                     "head": [
                       {
                         "type": "phase",
-                        "text": "Phase 1"
+                        "text": "Research"
                       },
                       {
                         "type": "headHeading",
-                        "text": "Research"
+                        "text": "Understanding the financial landscape and Gen Z's perception of sustainable investing"
                       },
                       {
                         "type": "headImg",
@@ -384,11 +384,11 @@
                     "head": [
                       {
                         "type": "phase",
-                        "text": "Phase 2"
+                        "text": "Ideation"
                       },
                       {
                         "type": "headHeading",
-                        "text": "Ideation"
+                        "text": "Exploring data visualisation and automated portfolio creation"
                       },
                       {
                         "type": "headImg",
@@ -461,11 +461,11 @@
                     "head": [
                       {
                         "type": "phase",
-                        "text": "Phase 3"
+                        "text": "Prototyping & Testing"
                       },
                       {
                         "type": "headHeading",
-                        "text": "Prototyping & Testing"
+                        "text": "Building and testing a platform prototype and AR visualisation"
                       },
                       {
                         "type": "headImg",
@@ -568,29 +568,7 @@
                       {
                         "type": "text",
                         "text": "Final testing, with participants completing tasks in the app while thinking out loud, gave us markers for further improvements. Based on those we clarified some of the options in the settings page and adapted the portfolio section to allow a better overview. We were happy to find that most parts of the app, including the important impact visualisation, were received well."
-                      }
-                    ]
-                  },
-                  {
-                    "type": "expandable",
-                    "head": [
-                      {
-                        "type": "phase",
-                        "text": "Phase 4"
                       },
-                      {
-                        "type": "headHeading",
-                        "text": "Final Prototype"
-                      },
-                      {
-                        "type": "headImg",
-                        "src": "/glace/final.webp",
-                        "alt": "Final Home Screen",
-                        "w": 3370,
-                        "h": 1896
-                      }
-                    ],
-                    "content": [
                         {
                             "type": "video",
                             "src": "/glace/walkthrough.mp4"
@@ -617,11 +595,11 @@
                     "head": [
                       {
                         "type": "phase",
-                        "text": "Phase 5"
+                        "text": "Delivery"
                       },
                       {
                         "type": "headHeading",
-                        "text": "Presentation"
+                        "text": "Creating brand, website and exhibition materials"
                       },
                       {
                         "type": "headImg",
@@ -718,7 +696,11 @@
                 {
                     "name": "Luca Antoniazzi:",
                     "role": "Creative Direction"
-                }
+                },
+                {
+                  "name": "Roman Dahm:",
+                  "role": "Deployment"
+              }
             ],
             "tools": [
                 {
@@ -803,11 +785,11 @@
                     "head": [
                       {
                         "type": "phase",
-                        "text": "Phase 1"
+                        "text": "Concept"
                       },
                       {
                         "type": "headHeading",
-                        "text": "Research"
+                        "text": "Exploring brand and website strategy"
                       },
                       {
                         "type": "headImg",
@@ -845,11 +827,11 @@
                     "head": [
                       {
                         "type": "phase",
-                        "text": "Phase 2"
+                        "text": "Ideation"
                       },
                       {
                         "type": "headHeading",
-                        "text": "Design Ideation"
+                        "text": "Iterating through prototypes with client input"
                       },
                       {
                         "type": "headImg",
@@ -879,11 +861,11 @@
                     "head": [
                       {
                         "type": "phase",
-                        "text": "Phase 3"
+                        "text": "Development"
                       },
                       {
                         "type": "headHeading",
-                        "text": "Development"
+                        "text": "Developing with Next.js, deploying on Kubernetes"
                       },
                       {
                         "type": "headImg",
